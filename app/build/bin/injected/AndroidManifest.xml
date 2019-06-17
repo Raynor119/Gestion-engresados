@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.pixels.Gestion"
+	android:versionCode="1"
+	android:versionName="1.0">
+
+	<uses-sdk
+		android:minSdkVersion="14"
+		android:targetSdkVersion="21"/>
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme"
+		android:resizeableActivity="true">
+
+		<activity
+			android:name=".MainActivity"
+			android:label="Iniciar Sessión"
+			android:theme="@style/AppTheme">
+
+			<intent-filter>
+
+				<action
+					android:name="android.intent.action.MAIN"/>
+
+				<category
+					android:name="android.intent.category.LAUNCHER"/>
+
+			</intent-filter>
+
+		</activity>
+
+		<activity
+			android:name=".cargar"/>
+
+		<activity
+			android:name=".registrar"
+			android:label="Registrarse"
+			android:theme="@style/AppTheme"/>
+
+		<activity
+			android:name=".menuha"
+			android:label="Registrar Hoja de Vida"
+			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity
+			android:name=".actiengre"/>
+
+		<activity
+			android:name=".emprea"/>
+
+		<activity
+			android:name=".admina"/>
+
+		<activity
+			android:name=".engre"
+			android:label="Menu"
+			android:theme="@style/AppTheme"/>
+
+	</application>
+
+</manifest>
+
