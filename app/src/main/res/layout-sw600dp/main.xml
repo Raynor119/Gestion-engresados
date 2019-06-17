@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="@mipmap/fondo"
@@ -21,7 +22,7 @@
 			android:layout_marginTop="30dp"
 			android:text="Iniciar Sessión"
 			android:textColor="#FFFFFF"
-			android:textSize="36sp" />
+			android:textSize="36sp"/>
 
 		<LinearLayout
 			android:layout_width="wrap_content"
@@ -36,9 +37,7 @@
 				<LinearLayout
 					android:layout_width="321dp"
 					android:layout_height="wrap_content"
-
 					android:layout_gravity="center|center_vertical"
-
 					android:layout_marginLeft="30dp"
 					android:layout_marginTop="100dp"
 					android:layout_marginRight="20dp"
@@ -49,7 +48,7 @@
 						android:layout_width="35dp"
 						android:layout_height="35dp"
 						android:layout_marginTop="5dp"
-						android:src="@mipmap/iconct" />
+						android:src="@mipmap/iconct"/>
 
 					<EditText
 						android:id="@+id/mainEditText1"
@@ -59,14 +58,13 @@
 						android:hint="Usuario"
 						android:inputType="textEmailAddress"
 						android:textColor="#FFFFFF"
-						android:textColorHint="#C0C0C0" />
+						android:textColorHint="#C0C0C0"/>
 
 				</LinearLayout>
 
 				<LinearLayout
 					android:layout_width="320dp"
 					android:layout_height="wrap_content"
-
 					android:layout_gravity="center|center_vertical"
 					android:layout_marginLeft="30dp"
 					android:layout_marginTop="19dp"
@@ -78,7 +76,7 @@
 						android:layout_width="35dp"
 						android:layout_height="35dp"
 						android:layout_marginTop="5dp"
-						android:src="@mipmap/contra" />
+						android:src="@mipmap/contra"/>
 
 					<EditText
 						android:id="@+id/mainEd1"
@@ -88,17 +86,14 @@
 						android:hint="Contraseña"
 						android:inputType="textPassword"
 						android:textColor="#FFFFFF"
-						android:textColorHint="#C0C0C0" />
-
+						android:textColorHint="#C0C0C0"/>
 
 				</LinearLayout>
 
 				<LinearLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-
 					android:layout_gravity="center|center_vertical"
-
 					android:layout_marginLeft="80dp"
 					android:layout_marginTop="26dp"
 					android:layout_marginRight="85dp"
@@ -106,13 +101,13 @@
 
 					<CheckBox
 						android:layout_width="wrap_content"
-						android:layout_height="wrap_content" />
+						android:layout_height="wrap_content"/>
 
 					<TextView
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:text="Recordarme"
-						android:textColor="#FFFFFF" />
+						android:textColor="#FFFFFF"/>
 
 				</LinearLayout>
 
@@ -125,7 +120,7 @@
 					android:onClick="onclic"
 					android:text="Registrarse"
 					android:textColor="#808080"
-					android:textSize="13sp" />
+					android:textSize="13sp"/>
 
 				<Button
 					android:layout_width="160dp"
@@ -135,7 +130,8 @@
 					android:background="@drawable/bbutton"
 					android:onClick="onclick"
 					android:text="Iniciar Seccion"
-					android:textColor="#FFFFFF" />
+					android:textColor="#FFFFFF"/>
+
 			</LinearLayout>
 
 			<LinearLayout
@@ -147,17 +143,18 @@
 					android:id="@+id/inage"
 					android:layout_width="256dp"
 					android:layout_height="277dp"
-
 					android:layout_gravity="center|center_vertical|center_horizontal"
 					android:layout_marginLeft="0dp"
 					android:layout_marginTop="55dp"
 					android:layout_marginRight="0dp"
-					android:background="#FFFFFF"
-					android:src="@mipmap/escudounipamplona1" />
+					android:src="@mipmap/escudounipamplona1"
+					android:background="@drawable/imagee"/>
+
 			</LinearLayout>
 
-
 		</LinearLayout>
+
 	</LinearLayout>
+
 </LinearLayout>
 

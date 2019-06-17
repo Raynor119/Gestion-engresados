@@ -20,8 +20,8 @@
 			android:layout_height="184dp"
 			android:layout_gravity="center_horizontal"
 			android:layout_marginTop="23dp"
-			android:background="#FFFFFF"
-			android:src="@mipmap/escudounipamplona1" />
+			android:src="@mipmap/escudounipamplona1"
+			android:background="@drawable/imagee"/>
 
 		<LinearLayout
 			android:layout_width="match_parent"
@@ -36,7 +36,7 @@
 				android:layout_width="35dp"
 				android:layout_height="35dp"
 				android:layout_marginTop="5dp"
-				android:src="@mipmap/iconct" />
+				android:src="@mipmap/iconct"/>
 
 			<EditText
 				android:id="@+id/mainEditText1"
@@ -46,7 +46,7 @@
 				android:hint="Usuario"
 				android:inputType="textEmailAddress"
 				android:textColor="#FFFFFF"
-				android:textColorHint="#C0C0C0" />
+				android:textColorHint="#C0C0C0"/>
 
 		</LinearLayout>
 
@@ -63,7 +63,7 @@
 				android:layout_width="35dp"
 				android:layout_height="35dp"
 				android:layout_marginTop="5dp"
-				android:src="@mipmap/contra" />
+				android:src="@mipmap/contra"/>
 
 			<EditText
 				android:id="@+id/mainEd1"
@@ -73,7 +73,7 @@
 				android:hint="Contraseña"
 				android:inputType="textPassword"
 				android:textColor="#FFFFFF"
-				android:textColorHint="#C0C0C0" />
+				android:textColorHint="#C0C0C0"/>
 
 		</LinearLayout>
 
@@ -87,13 +87,13 @@
 
 			<CheckBox
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
+				android:layout_height="wrap_content"/>
 
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="Recordarme"
-				android:textColor="#FFFFFF" />
+				android:textColor="#FFFFFF"/>
 
 		</LinearLayout>
 
@@ -106,7 +106,7 @@
 			android:onClick="onclic"
 			android:text="Registrarse"
 			android:textColor="#808080"
-			android:textSize="13sp" />
+			android:textSize="13sp"/>
 
 		<Button
 			android:layout_width="160dp"
@@ -116,7 +116,7 @@
 			android:background="@drawable/bbutton"
 			android:onClick="onclick"
 			android:text="Iniciar Seccion"
-			android:textColor="#FFFFFF" />
+			android:textColor="#FFFFFF"/>
 
 	</LinearLayout>
 
