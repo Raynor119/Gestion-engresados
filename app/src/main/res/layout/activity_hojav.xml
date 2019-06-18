@@ -306,13 +306,6 @@
 				android:layout_marginRight="25dp"
 				android:orientation="horizontal">
 
-				<Button
-					android:layout_width="205dp"
-					android:layout_height="55dp"
-					android:background="@drawable/bbutton"
-					android:text="Guardar"
-					android:textColor="#FFFFFF" />
-
 			</LinearLayout>
 
 			<LinearLayout

@@ -11,12 +11,12 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-
+import android.widget.*;
 public class menuha extends AppCompatActivity implements ActionBar.TabListener, ViewPager.OnPageChangeListener {
 	
 	private SectionsPagerAdapter mSectionsPagerAdapter;
 	private ViewPager mViewPager;
-	
+static 	public String user;
 	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +28,17 @@ public class menuha extends AppCompatActivity implements ActionBar.TabListener, 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
+		Bundle extra = getIntent().getExtras();
+	   user=extra.getString("Usuario");
+		
+		baseI c=new baseI(getApplicationContext());
+		
+		c.mot(user,"0");
+		
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-
+        
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
@@ -148,9 +154,6 @@ public class menuha extends AppCompatActivity implements ActionBar.TabListener, 
         }
     }
 	
-	public static void botonh(){
-		
-	}
 	
 	
 }
