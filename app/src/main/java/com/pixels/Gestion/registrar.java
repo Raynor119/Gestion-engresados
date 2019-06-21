@@ -7,6 +7,10 @@ import android.support.v7.app.*;
 import android.view.*;
 import android.widget.*;
 import android.content.*;
+import com.android.volley.toolbox.*;
+import java.lang.reflect.*;
+import com.android.volley.*;
+import java.util.*;
 
 public class registrar extends AppCompatActivity
 {
@@ -37,10 +41,10 @@ public class registrar extends AppCompatActivity
 				B_hoja bs1=new B_hoja(getApplicationContext());
 				B_experice bs2= new B_experice(getApplicationContext());
 				
-				bs1.agreH(usur,"","","","","","","","","","","","");
-				bs2.agreE(usur,"","","","","","","","");
-				bas.agregarE(usur,contr,nonb);
-				bs.agrE(usur,"0");
+				//bs1.agreH(usur,"","","","","","","","","","","","");
+				//bs2.agreE(usur,"","","","","","","","");
+				//bas.agregarE(usur,contr,nonb);
+				//bs.agrE(usur,"0");
 				Toast.makeText(getApplicationContext(), "usuario Agregado",Toast.LENGTH_LONG).show();
 				Intent intent=new Intent(registrar.this,MainActivity.class);
 				startActivity(intent);
@@ -49,6 +53,32 @@ public class registrar extends AppCompatActivity
 		   }
 		});
 		}
-	
-	
+	private void servicio(String URL){
+		StringRequest strindd=new StringRequest(Request.Method.POST,URL,new Response.Listener<String>(){
+			
+			@Override
+			public void onResponse(String response){
+				Toast.makeText(getApplicationContext(),"Conexion Exitosa",Toast.LENGTH_SHORT).show();
+			}
+			
+		},new Response.ErrorListener(){
+			
+			@Override
+			public void onErrorResponse(VolleyError error){
+				Toast.makeText(getApplicationContext(),"Conexion Exitosa",Toast.LENGTH_SHORT).show();
+				
+				
+			}
+			
+		}){
+	protected Map<String, String> getParams() throw AuthFailureError {
+
+		Map<String, String> parametros=new HashMap<String, String>();
+		parametros.put("usuario",usuario.getText().toString());
+
+
+		return super.getParams();
+      }
+	}
+	}
 }
