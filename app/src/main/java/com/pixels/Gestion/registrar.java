@@ -1,16 +1,22 @@
 package com.pixels.Gestion;
 
-import android.app.*;
-import android.os.*;
-import android.widget.TextView.*;
-import android.support.v7.app.*;
-import android.view.*;
-import android.widget.*;
-import android.content.*;
-import com.android.volley.toolbox.*;
-import java.lang.reflect.*;
-import com.android.volley.*;
-import java.util.*;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class registrar extends AppCompatActivity
 {
@@ -45,40 +51,67 @@ public class registrar extends AppCompatActivity
 				//bs2.agreE(usur,"","","","","","","","");
 				//bas.agregarE(usur,contr,nonb);
 				//bs.agrE(usur,"0");
-				Toast.makeText(getApplicationContext(), "usuario Agregado",Toast.LENGTH_LONG).show();
-				Intent intent=new Intent(registrar.this,MainActivity.class);
-				startActivity(intent);
-				finish();
+				servicio("http://192.168.0.7:80/AppAndroid/insertar_datos.php");
+				//Toast.makeText(getApplicationContext(), "usuario Agregado",Toast.LENGTH_LONG).show();
+				//Intent intent=new Intent(registrar.this,MainActivity.class);
+				//startActivity(intent);
+				//finish();
 			}
 		   }
 		});
 		}
+
 	private void servicio(String URL){
+
 		StringRequest strindd=new StringRequest(Request.Method.POST,URL,new Response.Listener<String>(){
-			
+
+
+
 			@Override
+
 			public void onResponse(String response){
+
 				Toast.makeText(getApplicationContext(),"Conexion Exitosa",Toast.LENGTH_SHORT).show();
+
 			}
-			
+
+
+
 		},new Response.ErrorListener(){
-			
+
+
+
 			@Override
+
 			public void onErrorResponse(VolleyError error){
-				Toast.makeText(getApplicationContext(),"Conexion Exitosa",Toast.LENGTH_SHORT).show();
-				
-				
+
+				Toast.makeText(getApplicationContext(),"Conexion Fallida",Toast.LENGTH_SHORT).show();
+
+
+
+
+
 			}
-			
+
+
+
 		}){
-	protected Map<String, String> getParams() throw AuthFailureError {
+			@Override
+			protected Map<String, String> getParams() throws AuthFailureError {
 
-		Map<String, String> parametros=new HashMap<String, String>();
-		parametros.put("usuario",usuario.getText().toString());
+				Map<String, String> parametros=new HashMap<String, String>();
 
+				parametros.put("usuario",usuario.getText().toString());
+				parametros.put("contrasena",contraseña.getText().toString());
+				parametros.put("nombre",nombre.getText().toString());
+				parametros.put("tipo","0");
 
-		return super.getParams();
-      }
+				return parametros;
+			}
+		};
+		RequestQueue requestQueue= Volley.newRequestQueue(this);
+		Toast.makeText(getApplicationContext(),"Conexion si",Toast.LENGTH_SHORT).show();
+		requestQueue.add(strindd);
 	}
-	}
+
 }

@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.commons.codec.*;
+
 
 public class B_experice extends SQLiteOpenHelper
 {
