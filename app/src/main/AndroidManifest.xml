@@ -13,7 +13,7 @@
 		android:resizeableActivity = "true">
         <activity
             android:name=".MainActivity"
-            android:label="Iniciar Sessión"
+            android:label="Iniciar Sesión"
 			android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
