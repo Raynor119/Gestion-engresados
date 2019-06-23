@@ -1,2 +1,2 @@
-NAME=Gestion_engresados
+NAME=Gestion-engresados
 FROM_GRADLE=TRUE

@@ -8,8 +8,8 @@
 
 	<LinearLayout
 		android:orientation="vertical"
-		android:layout_width="320dp"
-		android:layout_height="525dp"
+		android:layout_width="330dp"
+		android:layout_height="559dp"
 		android:layout_gravity="center|center_vertical|center_horizontal"
 		android:background="@drawable/braarown">
 
@@ -17,10 +17,9 @@
 			android:id="@+id/inage"
 			android:layout_gravity="center_horizontal"
 			android:layout_width="150dp"
-			android:layout_height="150dp"
+			android:layout_height="184dp"
 			android:src="@mipmap/escudounipamplona1"
-			android:layout_marginTop="17dp"
-			android:background="@drawable/imagee"/>
+			android:layout_marginTop="17dp"/>
 
 		<LinearLayout
 			android:orientation="horizontal"
@@ -43,7 +42,9 @@
 				android:layout_height="wrap_content"
 				android:hint="Nombre de Usuario"
 				android:textColorHint="#C0C0C0"
-				android:id="@+id/nombt"/>
+				android:id="@+id/nombt"
+				android:textColor="#FFFFFF"
+				android:inputType="textPersonName"/>
 
 		</LinearLayout>
 

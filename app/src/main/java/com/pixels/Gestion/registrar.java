@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
+import android.content.Intent;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -20,8 +20,9 @@ import java.util.Map;
 
 public class registrar extends AppCompatActivity
 {
-	EditText usuario,nombre,contraseña;
+	public EditText usuario,nombre,contraseña;
 	Button bm;
+	
 	@Override
 	protected void onCreate(Bundle SavedInstacestate){
 		super.onCreate(SavedInstacestate);
@@ -51,67 +52,318 @@ public class registrar extends AppCompatActivity
 				//bs2.agreE(usur,"","","","","","","","");
 				//bas.agregarE(usur,contr,nonb);
 				//bs.agrE(usur,"0");
-				servicio("http://192.168.0.7:80/AppAndroid/insertar_datos.php");
-				//Toast.makeText(getApplicationContext(), "usuario Agregado",Toast.LENGTH_LONG).show();
-				//Intent intent=new Intent(registrar.this,MainActivity.class);
-				//startActivity(intent);
-				//finish();
+				ip c= new ip();
+				String ipt=c.ip();
+				
+				servicioU("http://"+ipt+":80/AppAndroid/tb_usuarios.php");
+				servicioH("http://"+ipt+":80/AppAndroid/h_datos.php");
+				servicioE("http://"+ipt+":80/AppAndroid/h_estudios.php");
+				servicioEx("http://"+ipt+":80/AppAndroid/h_experiencia.php");
+				servicoIni("http://"+ipt+":80/AppAndroid/inicio_bd.php");
+				Toast.makeText(getApplicationContext(), "usuario Agregado",Toast.LENGTH_LONG).show();
+				Intent intent=new Intent(registrar.this,MainActivity.class);
+			    startActivity(intent);
+				finish();
 			}
 		   }
 		});
 		}
 
-	private void servicio(String URL){
+	
+	
+		
+		
+	
+		
+	private void servicioU(String URL){
 
 		StringRequest strindd=new StringRequest(Request.Method.POST,URL,new Response.Listener<String>(){
 
 
 
-			@Override
+				
 
-			public void onResponse(String response){
+				public void onResponse(String response){
 
-				Toast.makeText(getApplicationContext(),"Conexion Exitosa",Toast.LENGTH_SHORT).show();
+					
 
-			}
-
-
-
-		},new Response.ErrorListener(){
+				}
+				
 
 
-
-			@Override
-
-			public void onErrorResponse(VolleyError error){
-
-				Toast.makeText(getApplicationContext(),"Conexion Fallida",Toast.LENGTH_SHORT).show();
+			},new Response.ErrorListener(){
 
 
 
+				
+
+				public void onErrorResponse(VolleyError error){
+
+					Toast.makeText(getApplicationContext(),"Conexion Fallida",Toast.LENGTH_SHORT).show();
 
 
-			}
 
 
 
-		}){
-			@Override
+				}
+
+			
+
+			
+	}){
+		
 			protected Map<String, String> getParams() throws AuthFailureError {
 
 				Map<String, String> parametros=new HashMap<String, String>();
-
-				parametros.put("usuario",usuario.getText().toString());
-				parametros.put("contrasena",contraseña.getText().toString());
-				parametros.put("nombre",nombre.getText().toString());
+				String usur=String.valueOf(usuario.getText().toString());
+				String contr=String.valueOf(contraseña.getText().toString());
+				String nonb=String.valueOf(nombre.getText().toString());
+				parametros.put("usuario",usur);
+				parametros.put("contrasena",contr);
+				parametros.put("nombre",nonb);
 				parametros.put("tipo","0");
 
 				return parametros;
 			}
-		};
+	};
 		RequestQueue requestQueue= Volley.newRequestQueue(this);
-		Toast.makeText(getApplicationContext(),"Conexion si",Toast.LENGTH_SHORT).show();
+		
 		requestQueue.add(strindd);
 	}
+	
+	
+	
+	private void servicioH(String URL){
+
+		StringRequest strindd=new StringRequest(Request.Method.POST,URL,new Response.Listener<String>(){
+
+
+
+				
+
+				public void onResponse(String response){
+
+					
+
+				}
+
+
+
+			},new Response.ErrorListener(){
+
+
+
+				
+
+				public void onErrorResponse(VolleyError error){
+
+					Toast.makeText(getApplicationContext(),"Conexion Fallida",Toast.LENGTH_SHORT).show();
+
+
+
+
+
+				}
+
+
+
+
+			}){
+
+			protected Map<String, String> getParams() throws AuthFailureError {
+
+				Map<String, String> parametros=new HashMap<String, String>();
+				String usur=String.valueOf(usuario.getText().toString());
+				
+				parametros.put("usuario",usur);
+				parametros.put("nombre","");
+				parametros.put("apellido","");
+				parametros.put("fechaden","");
+				parametros.put("email","");
+				parametros.put("lugarden","");
+				parametros.put("edad","");
+				parametros.put("cedulac","");
+				parametros.put("lugarex","");
+				parametros.put("ocupacion","");
+				parametros.put("direcc","");
+				parametros.put("estadoc","");
+				parametros.put("celular","");
+				return parametros;
+			}
+		};
+		RequestQueue requestQueue= Volley.newRequestQueue(this);
+		
+		requestQueue.add(strindd);
+	}
+	
+	
+	
+	private void servicioE(String URL){
+
+		StringRequest strindd=new StringRequest(Request.Method.POST,URL,new Response.Listener<String>(){
+
+
+
+				
+
+				public void onResponse(String response){
+
+					
+
+				}
+
+
+
+			},new Response.ErrorListener(){
+
+
+
+				
+
+				public void onErrorResponse(VolleyError error){
+
+					Toast.makeText(getApplicationContext(),"Conexion Fallida",Toast.LENGTH_SHORT).show();
+
+
+
+
+
+				}
+
+
+
+
+			}){
+
+			protected Map<String, String> getParams() throws AuthFailureError {
+
+				Map<String, String> parametros=new HashMap<String, String>();
+				String usur=String.valueOf(usuario.getText().toString());
+				
+				parametros.put("usuario",usur);
+				parametros.put("primarios","");
+				parametros.put("secundarios","");
+				parametros.put("superiores","");
+				parametros.put("otros","");
+				return parametros;
+			}
+		};
+		RequestQueue requestQueue= Volley.newRequestQueue(this);
+		
+		requestQueue.add(strindd);
+	}
+
+	
+	
+	private void servicioEx(String URL){
+
+		StringRequest strindd=new StringRequest(Request.Method.POST,URL,new Response.Listener<String>(){
+
+
+
+
+
+				public void onResponse(String response){
+
+					
+
+				}
+
+
+
+			},new Response.ErrorListener(){
+
+
+
+
+
+				public void onErrorResponse(VolleyError error){
+
+					Toast.makeText(getApplicationContext(),"Conexion Fallida",Toast.LENGTH_SHORT).show();
+
+
+
+
+
+				}
+
+
+
+
+			}){
+
+			protected Map<String, String> getParams() throws AuthFailureError {
+
+				Map<String, String> parametros=new HashMap<String, String>();
+				String usur=String.valueOf(usuario.getText().toString());
+
+				parametros.put("usuario",usur);
+				parametros.put("celularrl","");
+				parametros.put("nombrerl","");
+				parametros.put("celularrf","");
+				parametros.put("nombrerf","");
+				return parametros;
+			}
+		};
+		RequestQueue requestQueue= Volley.newRequestQueue(this);
+		
+		requestQueue.add(strindd);
+	}
+	
+	private void servicoIni(String URL){
+
+		StringRequest strindd=new StringRequest(Request.Method.POST,URL,new Response.Listener<String>(){
+
+
+
+
+
+				public void onResponse(String response){
+
+					
+
+				}
+
+
+
+			},new Response.ErrorListener(){
+
+
+
+
+
+				public void onErrorResponse(VolleyError error){
+
+					Toast.makeText(getApplicationContext(),"Conexion Fallida",Toast.LENGTH_SHORT).show();
+
+
+
+
+
+				}
+
+
+
+
+			}){
+
+			protected Map<String, String> getParams() throws AuthFailureError {
+
+				Map<String, String> parametros=new HashMap<String, String>();
+				String usur=String.valueOf(usuario.getText().toString());
+
+				parametros.put("usuario",usur);
+				parametros.put("opcion","Usuario1");
+				parametros.put("dato","0");
+				
+				return parametros;
+			}
+		};
+		RequestQueue requestQueue= Volley.newRequestQueue(this);
+		
+		requestQueue.add(strindd);
+	}
+	
+	
 
 }
