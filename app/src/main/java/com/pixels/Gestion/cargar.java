@@ -93,10 +93,10 @@ public class cargar extends Activity
 					String conr=promedioLista.get(p).getContraseña();
 					if(conr.equals(cont)){
 
-						final baseI bs=new baseI(getApplicationContext());
+						//final baseI bs=new baseI(getApplicationContext());
 						datt cc=new datt();
 						final String uss=promedioLista.get(p).getUsuario();
-						bs.buscu(cc,uss);
+						//bs.buscu(cc,uss);
 						//String dat=cc.GetDato();
 						String dat="0";
 						if(dat.equals("1")|| dat.equals("2")){
@@ -113,7 +113,7 @@ public class cargar extends Activity
 										@Override
 										public void onClick(DialogInterface dialog,int which){
 											Intent intent=new Intent(cargar.this,menuha.class);
-											bs.mot(uss,"0");
+											//bs.mot(uss,"0");
 
 											intent.putExtra("Usuario",uss);
 
@@ -129,7 +129,7 @@ public class cargar extends Activity
 										@Override
 										public void onClick(DialogInterface dialog,int which){
 											Intent intent=new Intent(cargar.this,engre.class);
-											bs.mot(uss,"2");
+											//bs.mot(uss,"2");
 											startActivity(intent);
 											finish();
 
