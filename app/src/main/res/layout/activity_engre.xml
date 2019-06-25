@@ -10,7 +10,8 @@
 		android:layout_width="wrap_content"
 		android:text="Button"
 		android:id="@+id/activityengreButton1"
-		android:layout_gravity="center_vertical|center_horizontal"/>
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:onClick="perfi"/>
 
 </LinearLayout>
 

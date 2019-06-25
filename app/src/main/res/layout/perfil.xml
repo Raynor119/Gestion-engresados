@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:orientation="vertical"
 	android:padding="5dp">
 
 	<ScrollView
@@ -26,19 +27,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="25dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Nombre:"
+					android:text="Nombre: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="textPersonName"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/nombreh"/>
@@ -49,7 +49,7 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
@@ -59,9 +59,8 @@
 					android:text="Apellidos:"
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="textPersonName"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/apellidoh"/>
@@ -72,19 +71,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Fecha de Nacimiento:"
+					android:text="Fecha de Nacimiento: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="wrap_content"
-					android:inputType="textPersonName"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/fNmh"/>
@@ -95,19 +93,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Email:"
+					android:text="Email: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="textWebEmailAddress"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/emailh"/>
@@ -118,19 +115,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Lugar de Nacimiento:"
+					android:text="Lugar de Nacimiento: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="textPersonName"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/lNmh"/>
@@ -141,19 +137,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Edad:"
+					android:text="Edad: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="number"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/edadh"/>
@@ -164,19 +159,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Cedula de Ciudadania:"
+					android:text="Cedula de Ciudadania: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="number"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/CCh"/>
@@ -187,19 +181,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Lugar de Expedicion:"
+					android:text="Lugar de Expedicion: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="textPersonName"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/LEXh"/>
@@ -210,19 +203,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Ocupacion:"
+					android:text="Ocupacion: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="textPersonName"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/ocupacioh"/>
@@ -233,22 +225,21 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Direccion de Residencia:"
+					android:text="Direccion de Residencia: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="textPersonName"
+					android:id="@+id/dic"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:id="@+id/dic"/>
+					android:ems="10"/>
 
 			</LinearLayout>
 
@@ -256,19 +247,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Estado Civil:"
+					android:text="Estado Civil: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="textPersonName"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/estadoh"/>
@@ -279,19 +269,18 @@
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
+				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
 				android:layout_marginRight="35dp">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Celular:"
+					android:text="Celular: "
 					android:layout_marginTop="5dp"/>
 
-				<EditText
+				<TextView
 					android:layout_width="match_parent"
-					android:inputType="number"
 					android:layout_height="wrap_content"
 					android:ems="10"
 					android:id="@+id/celuj"/>
@@ -318,5 +307,5 @@
 
 	</ScrollView>
 
-</FrameLayout>
+</LinearLayout>
 

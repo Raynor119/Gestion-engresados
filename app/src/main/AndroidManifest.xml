@@ -41,6 +41,10 @@
 			android:name=".engre"
 			android:label="Menu"
 			android:theme="@style/AppTheme"/>
+		<activity
+			android:name=".perfil"
+			android:label="Perfil"
+			android:theme="@style/AppTheme"/>
 	    
     </application>
 

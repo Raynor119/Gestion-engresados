@@ -3165,7 +3165,7 @@ containing a value of this type.
         public static final int btnm=0x7f0700a0;
         public static final int buttonPanel=0x7f070052;
         public static final int cancel_action=0x7f0700ba;
-        public static final int celuj=0x7f070098;
+        public static final int celuj=0x7f070099;
         public static final int center=0x7f070016;
         public static final int center_horizontal=0x7f070017;
         public static final int center_vertical=0x7f070018;
@@ -3190,7 +3190,7 @@ containing a value of this type.
         public static final int design_menu_item_action_area_stub=0x7f0700ab;
         public static final int design_menu_item_text=0x7f0700aa;
         public static final int design_navigation_view=0x7f0700a9;
-        public static final int dic=0x7f070099;
+        public static final int dic=0x7f070097;
         public static final int disableHome=0x7f070039;
         public static final int edadh=0x7f070093;
         public static final int edit_query=0x7f07006d;
@@ -3199,7 +3199,7 @@ containing a value of this type.
         public static final int end_padder=0x7f0700cc;
         public static final int enterAlways=0x7f07000f;
         public static final int enterAlwaysCollapsed=0x7f070010;
-        public static final int estadoh=0x7f070097;
+        public static final int estadoh=0x7f070098;
         public static final int exitUntilCollapsed=0x7f070011;
         public static final int expand_activities_button=0x7f07004c;
         public static final int expanded_menu=0x7f070061;
@@ -3398,10 +3398,11 @@ containing a value of this type.
         public static final int notification_template_media_custom=0x7f04003e;
         public static final int notification_template_part_chronometer=0x7f04003f;
         public static final int notification_template_part_time=0x7f040040;
-        public static final int select_dialog_item_material=0x7f040041;
-        public static final int select_dialog_multichoice_material=0x7f040042;
-        public static final int select_dialog_singlechoice_material=0x7f040043;
-        public static final int support_simple_spinner_dropdown_item=0x7f040044;
+        public static final int perfil=0x7f040041;
+        public static final int select_dialog_item_material=0x7f040042;
+        public static final int select_dialog_multichoice_material=0x7f040043;
+        public static final int select_dialog_singlechoice_material=0x7f040044;
+        public static final int support_simple_spinner_dropdown_item=0x7f040045;
     }
     public static final class mipmap {
         public static final int contra=0x7f030000;
