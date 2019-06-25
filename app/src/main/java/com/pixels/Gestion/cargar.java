@@ -7,21 +7,24 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
+
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 public class cargar extends Activity
 {
-	public List<usurmm> promedioLista;
-	public List<usurmm> usurr;
+	public List<usurmm> promedioLista =new ArrayList<>();;
+	public List<usurmm> usurr=new ArrayList<>();
+
 	String user,cont;
 	InputStream is =null;
 	String line=null;
@@ -37,160 +40,198 @@ public class cargar extends Activity
 		
 		//BasedeDatosU bas=new BasedeDatosU(getApplicationContext());
 		usurmm busca=new usurmm();
-		usurr=new ArrayList<>();
+
 		ip c= new ip();
 		String ipt=c.ip();
-		datoss("http://192.168.0.7:80/AppAndroid/usulist.php");
-		promedioLista=usurr;
+		//datoss("http://192.168.0.7:80/AppAndroid/usulist.php");
+		//usurr.add(new usurmm(jo.getString("USUARIO"),jo.getString("CONTRASENA"),jo.getString("NOMBRE"),jo.getString("TIPO")));
+		///promedioLista=usurr;
+		String Url="http://"+ipt+":80/AppAndroid/usulist.php";
+
+		// sacar
+		JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Url, new Response.Listener<JSONArray>() {
+
+			@Override
+			public void onResponse(JSONArray response) {
+				JSONObject jo = null;
+				//Toast.makeText(getApplicationContext(), "entro2",Toast.LENGTH_LONG).show();
+				for (int i = 0; i < response.length(); i++) {
+					try {
+						//Toast.makeText(getApplicationContext(), "entro3",Toast.LENGTH_LONG).show();
+						jo = response.getJSONObject(i);
+						promedioLista.add(new usurmm(jo.getString("USUARIO"), jo.getString("CONTRASENA"), jo.getString("NOMBRE"), jo.getString("TIPO")));
+						promedioLista.get(i).getUsuario();
+						//Toast.makeText(getApplicationContext(), promedioLista.get(i).getUsuario()+" :t",Toast.LENGTH_LONG).show();
+						//String v=jo.getString("USUARIO");
+						//Toast.makeText(getApplicationContext(), v,Toast.LENGTH_LONG).show();
+					} catch (JSONException e) {
+						Toast.makeText(getApplicationContext(), "puta", Toast.LENGTH_LONG).show();
+
+					}
+				}
 
 
-		int i;
-		int confu=0;
-		int confc=0;
-		int p=0;
-		for(i=0;i<=promedioLista.size()-1;i++){
-			Toast.makeText(getApplicationContext(), "entrorr",Toast.LENGTH_LONG).show();
 
-			String usurrr=promedioLista.get(i).getUsuario();
-			if(usurrr.equals(user)){
-				confu=1;
-				p=i;
-			}
-			
-		}
-		if(confu==1){
-			
-			
-				String conr=promedioLista.get(p).getContraseña();
-				if(conr.equals(cont)){
-					
-					final baseI bs=new baseI(getApplicationContext());
-					datt cc=new datt();
-					final String uss=promedioLista.get(p).getUsuario();
-					bs.buscu(cc,uss);
-					//String dat=cc.GetDato();
-					String dat="0";
-					if(dat.equals("1")|| dat.equals("2")){
-						Intent intent=new Intent(cargar.this,engre.class);
-						intent.putExtra("Usuario",uss);
+				int i;
+				int confu=0;
+				int confc=0;
+				int p=0;
+
+				for(i=0;i<promedioLista.size();i++){
+
+
+					String usurrr=promedioLista.get(i).getUsuario();
+					if(usurrr.equals(user)){
+						confu=1;
+						p=i;
+					}
+
+				}
+				if(confu==1){
+
+
+					String conr=promedioLista.get(p).getContraseña();
+					if(conr.equals(cont)){
+
+						final baseI bs=new baseI(getApplicationContext());
+						datt cc=new datt();
+						final String uss=promedioLista.get(p).getUsuario();
+						bs.buscu(cc,uss);
+						//String dat=cc.GetDato();
+						String dat="0";
+						if(dat.equals("1")|| dat.equals("2")){
+							Intent intent=new Intent(cargar.this,engre.class);
+							intent.putExtra("Usuario",uss);
+							startActivity(intent);
+							finish();
+						}else{
+							AlertDialog.Builder alert= new AlertDialog.Builder(cargar.this);
+
+							alert.setMessage("Desea Registrar la Hoja de Vida")
+									.setCancelable(false)
+									.setPositiveButton("si", new DialogInterface.OnClickListener(){
+										@Override
+										public void onClick(DialogInterface dialog,int which){
+											Intent intent=new Intent(cargar.this,menuha.class);
+											bs.mot(uss,"0");
+
+											intent.putExtra("Usuario",uss);
+
+											startActivity(intent);
+											finish();
+
+
+
+										}
+
+									})
+									.setNegativeButton("no", new DialogInterface.OnClickListener(){
+										@Override
+										public void onClick(DialogInterface dialog,int which){
+											Intent intent=new Intent(cargar.this,engre.class);
+											bs.mot(uss,"2");
+											startActivity(intent);
+											finish();
+
+
+
+											dialog.cancel();
+										}
+
+									});
+							AlertDialog titulo=alert.create();
+							titulo.setTitle("Alerta");
+							titulo.show();
+						}
+
+					}
+					else{
+						Toast.makeText(getApplicationContext(), "Contraseña incorrecta",Toast.LENGTH_LONG).show();
+						Intent intent=new Intent(cargar.this,MainActivity.class);
 						startActivity(intent);
 						finish();
-					}else{
-					AlertDialog.Builder alert= new AlertDialog.Builder(cargar.this);
-					
-					alert.setMessage("Desea Registrar la Hoja de Vida")
-						.setCancelable(false)
-						.setPositiveButton("si", new DialogInterface.OnClickListener(){
-							@Override
-							public void onClick(DialogInterface dialog,int which){
-								Intent intent=new Intent(cargar.this,menuha.class);
-									bs.mot(uss,"0");
-
-									intent.putExtra("Usuario",uss);
-									
-								startActivity(intent);
-								finish();
-
-
-								
-							}
-
-						})
-						.setNegativeButton("no", new DialogInterface.OnClickListener(){
-							@Override
-							public void onClick(DialogInterface dialog,int which){
-								Intent intent=new Intent(cargar.this,engre.class);
-									bs.mot(uss,"2");
-								startActivity(intent);
-								finish();
-								
-
-
-								dialog.cancel();
-							}
-
-						});
-                    AlertDialog titulo=alert.create();
-                    titulo.setTitle("Alerta");
-                    titulo.show();
 					}
-					
-				}
-				else{
-					Toast.makeText(getApplicationContext(), "Contraseña incorrecta",Toast.LENGTH_LONG).show();
+
+
+
+				}else{
+					Toast.makeText(getApplicationContext(), "usurio no encontrdo",Toast.LENGTH_LONG).show();
 					Intent intent=new Intent(cargar.this,MainActivity.class);
 					startActivity(intent);
 					finish();
 				}
-				
 
-			
-		}else{
-			Toast.makeText(getApplicationContext(), "usurio no encontrdo",Toast.LENGTH_LONG).show();
-			Intent intent=new Intent(cargar.this,MainActivity.class);
-			startActivity(intent);
-			finish();
-		}
+
+
+			}
+		}, new Response.ErrorListener() {
+			@Override
+			public void onErrorResponse(VolleyError error) {
+				Toast.makeText(getApplicationContext(), "errorConexion",Toast.LENGTH_LONG).show();
+
+			}
+		});
+		RequestQueue requestQueue;
+		requestQueue= Volley.newRequestQueue(this);
+		requestQueue.add(jsonArrayRequest);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 
 
 
 	public void datoss(String Url){
-		try{
-			URL url =new URL(Url);
-			HttpURLConnection con=(HttpURLConnection) url.openConnection();
-			con.setRequestMethod("GET");
-			is=new BufferedInputStream(con.getInputStream());
+		Toast.makeText(getApplicationContext(), "entro1",Toast.LENGTH_LONG).show();
+		JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Url, new Response.Listener<JSONArray>() {
 
+			@Override
+			public void onResponse(JSONArray response) {
+				JSONObject jo = null;
+				Toast.makeText(getApplicationContext(), "entro2",Toast.LENGTH_LONG).show();
+				for (int i = 0; i < response.length(); i++) {
+					try {
+						Toast.makeText(getApplicationContext(), "entro3",Toast.LENGTH_LONG).show();
+						jo = response.getJSONObject(i);
+						promedioLista.add(new usurmm(jo.getString("USUARIO"), jo.getString("CONTRASENA"), jo.getString("NOMBRE"), jo.getString("TIPO")));
+						promedioLista.get(i).getUsuario();
+						Toast.makeText(getApplicationContext(), promedioLista.get(i).getUsuario()+" :t",Toast.LENGTH_LONG).show();
+						String v=jo.getString("USUARIO");
+						Toast.makeText(getApplicationContext(), v,Toast.LENGTH_LONG).show();
+					} catch (JSONException e) {
+						Toast.makeText(getApplicationContext(), "puta", Toast.LENGTH_LONG).show();
 
-
-
-		}catch (Exception e){
-			Toast.makeText(getApplicationContext(), "error1",Toast.LENGTH_LONG).show();
-
-			e.printStackTrace();
-		}
-
-		try{
-			BufferedReader br= new BufferedReader(new InputStreamReader(is));
-			StringBuilder sb=new StringBuilder();
-			while ((br.readLine()) != null){
-				sb.append(line+"\n");
-
-			}
-			is.close();
-			result=sb.toString();
-
-
-		}catch (Exception e){
-			Toast.makeText(getApplicationContext(), "error2",Toast.LENGTH_LONG).show();
-
-			e.printStackTrace();
-		}
-
-		try{
-			JSONArray js=new JSONArray(result);
-			JSONObject jo=null;
-
-			data=new String[js.length()];
-
-			for(int i=0;i<js.length();i++){
-				jo=js.getJSONObject(i);
-				//data[i]=jo.getString();
-				Toast.makeText(getApplicationContext(), "entrto",Toast.LENGTH_LONG).show();
-
-				usurr.add(new usurmm(jo.getString("USUARIO"),jo.getString("CONTRASENA"),jo.getString("NOMBRE"),jo.getString("TIPO")));
+					}
+				}
+				Toast.makeText(getApplicationContext(), promedioLista.get(0).getUsuario()+" :t",Toast.LENGTH_LONG).show();
 
 			}
+		}, new Response.ErrorListener() {
+			@Override
+			public void onErrorResponse(VolleyError error) {
+				Toast.makeText(getApplicationContext(), "errorConexion",Toast.LENGTH_LONG).show();
 
-		}catch (Exception e){
-			Toast.makeText(getApplicationContext(), "error3",Toast.LENGTH_LONG).show();
-
-			e.printStackTrace();
-		}
-
-
-
+			}
+		});
+		RequestQueue requestQueue;
+		requestQueue= Volley.newRequestQueue(this);
+		requestQueue.add(jsonArrayRequest);
 
 	}
 
