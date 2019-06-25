@@ -12,7 +12,7 @@ public class BasedeDatosU extends SQLiteOpenHelper
 {
 	private static final String NOMBRE_BD="basededatosU";
     private static final int VERSION_BD=1;
-    private static final String TABLA_ENGRESADOS="CREATE TABLE ENGRESADOS(USUARIO TEXT PRIMARY KEY, CONTRASEÑA TEXT, NOMBRE TEXT)";
+    private static final String TABLA_ENGRESADOS="CREATE TABLE ENGRESADOS(USUARIO TEXT PRIMARY KEY, CONTRASEÑA TEXT, NOMBRE TEXT,TIPO TEXT)";
 
     public BasedeDatosU(Context context) {
         super(context, NOMBRE_BD, null, VERSION_BD);
@@ -31,11 +31,11 @@ public class BasedeDatosU extends SQLiteOpenHelper
         sqLiteDatabase.execSQL(TABLA_ENGRESADOS);
     }
 	
-	public void agregarE(String usuario,String contraseña,String nombre){
+	public void agregarE(String usuario,String contraseña,String nombre,String tipo){
         SQLiteDatabase bd=getWritableDatabase();
         if(bd!=null)
         {
-            bd.execSQL("INSERT INTO ENGRESADOS VALUES('"+usuario+"','"+contraseña+"','"+nombre+"')");
+            bd.execSQL("INSERT INTO ENGRESADOS VALUES('"+usuario+"','"+contraseña+"','"+nombre+"','"+tipo+"')");
             bd.close();
         }
     }
@@ -47,7 +47,7 @@ public class BasedeDatosU extends SQLiteOpenHelper
         List<usurmm> usurr=new ArrayList<>();
         if(cursor.moveToFirst()){
             do{
-                usurr.add(new usurmm(cursor.getString(0),cursor.getString(1),cursor.getString(2)));
+                usurr.add(new usurmm(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3)));
 
 
             }while(cursor.moveToNext());
@@ -65,6 +65,7 @@ public class BasedeDatosU extends SQLiteOpenHelper
             do{
                 datos.setContraseña(cursor.getString(1));
                 datos.setNombre(cursor.getString(2));
+                datos.setNombre(cursor.getString(3));
                 
 
 
