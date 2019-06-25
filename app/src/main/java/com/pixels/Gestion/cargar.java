@@ -197,43 +197,6 @@ public class cargar extends Activity
 
 
 
-	public void datoss(String Url){
-		Toast.makeText(getApplicationContext(), "entro1",Toast.LENGTH_LONG).show();
-		JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Url, new Response.Listener<JSONArray>() {
-
-			@Override
-			public void onResponse(JSONArray response) {
-				JSONObject jo = null;
-				Toast.makeText(getApplicationContext(), "entro2",Toast.LENGTH_LONG).show();
-				for (int i = 0; i < response.length(); i++) {
-					try {
-						Toast.makeText(getApplicationContext(), "entro3",Toast.LENGTH_LONG).show();
-						jo = response.getJSONObject(i);
-						promedioLista.add(new usurmm(jo.getString("USUARIO"), jo.getString("CONTRASENA"), jo.getString("NOMBRE"), jo.getString("TIPO")));
-						promedioLista.get(i).getUsuario();
-						Toast.makeText(getApplicationContext(), promedioLista.get(i).getUsuario()+" :t",Toast.LENGTH_LONG).show();
-						String v=jo.getString("USUARIO");
-						Toast.makeText(getApplicationContext(), v,Toast.LENGTH_LONG).show();
-					} catch (JSONException e) {
-						Toast.makeText(getApplicationContext(), "puta", Toast.LENGTH_LONG).show();
-
-					}
-				}
-				Toast.makeText(getApplicationContext(), promedioLista.get(0).getUsuario()+" :t",Toast.LENGTH_LONG).show();
-
-			}
-		}, new Response.ErrorListener() {
-			@Override
-			public void onErrorResponse(VolleyError error) {
-				Toast.makeText(getApplicationContext(), "errorConexion",Toast.LENGTH_LONG).show();
-
-			}
-		});
-		RequestQueue requestQueue;
-		requestQueue= Volley.newRequestQueue(this);
-		requestQueue.add(jsonArrayRequest);
-
-	}
 
 
 
