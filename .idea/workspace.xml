@@ -19,6 +19,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f9f9cba-9528-40c3-a793-e7eeebbfdc9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,20 +49,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usurmm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="17">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
                 <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
                 <element signature="e#690#691#0" expanded="true" />
                 <element signature="e#725#726#0" expanded="true" />
@@ -71,21 +66,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/cargar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3153">
-              <caret line="199" selection-start-line="199" selection-end-line="199" />
+            <state relative-caret-position="-602">
+              <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1578#4934#0" expanded="true" />
-                <element signature="e#3654#3995#0" expanded="true" />
-                <element signature="e#3994#3995#0" expanded="true" />
-                <element signature="e#4031#4354#0" expanded="true" />
-                <element signature="e#4353#4354#0" expanded="true" />
-                <element signature="e#4933#4934#0" expanded="true" />
-                <element signature="e#4936#5128#0" expanded="true" />
-                <element signature="e#5127#5128#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="459">
               <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -138,13 +137,13 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_hojav.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_registrar.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/B_experice.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrar.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usurmm.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/BasedeDatosU.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/cargar.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -209,9 +208,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,14 +324,22 @@
       <option name="project" value="LOCAL" />
       <updated>1561428888036</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mysql funciona login">
+      <created>1561492018215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561492018215</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.11673774" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.11673774" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -341,12 +348,12 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Find" order="0" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="1" visible="true" weight="0.3261105" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.3261105" />
       <window_info anchor="bottom" id="Logcat" order="2" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Build" order="6" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -507,16 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuha.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -527,12 +524,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
@@ -551,10 +548,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/B_hoja.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -565,10 +565,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrar.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/B_hoja.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+        <state relative-caret-position="85">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/cargar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-602">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -577,39 +594,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usurmm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="17">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
             <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
             <element signature="e#690#691#0" expanded="true" />
             <element signature="e#725#726#0" expanded="true" />
             <element signature="e#743#744#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/cargar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3153">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1578#4934#0" expanded="true" />
-            <element signature="e#3654#3995#0" expanded="true" />
-            <element signature="e#3994#3995#0" expanded="true" />
-            <element signature="e#4031#4354#0" expanded="true" />
-            <element signature="e#4353#4354#0" expanded="true" />
-            <element signature="e#4933#4934#0" expanded="true" />
-            <element signature="e#4936#5128#0" expanded="true" />
-            <element signature="e#5127#5128#0" expanded="true" />
           </folding>
         </state>
       </provider>
