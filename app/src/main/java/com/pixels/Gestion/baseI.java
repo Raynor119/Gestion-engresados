@@ -48,7 +48,7 @@ public class baseI extends SQLiteOpenHelper
         List<datt> usurr=new ArrayList<>();
         if(cursor.moveToFirst()){
             do{
-                usurr.add(new datt(cursor.getString(0),cursor.getString(1)));
+                usurr.add(new datt(cursor.getString(0),cursor.getString(1),cursor.getString(2)));
 
 
             }while(cursor.moveToNext());

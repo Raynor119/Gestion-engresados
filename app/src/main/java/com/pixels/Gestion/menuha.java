@@ -10,8 +10,6 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-
-import android.widget.*;
 public class menuha extends AppCompatActivity implements ActionBar.TabListener, ViewPager.OnPageChangeListener {
 	
 	private SectionsPagerAdapter mSectionsPagerAdapter;
@@ -30,10 +28,13 @@ static 	public String user;
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 		Bundle extra = getIntent().getExtras();
 	   user=extra.getString("Usuario");
+	   //String d=extra.getString("deci");
+	   //if(d.equals("1")) {
+         //  finish();
+       //}
+		//baseI c=new baseI(getApplicationContext());
 		
-		baseI c=new baseI(getApplicationContext());
-		
-		c.mot(user,"0");
+		//c.mot(user,"0");
 		
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
@@ -153,7 +154,8 @@ static 	public String user;
             return section;
         }
     }
-	
+
+
 	
 	
 }

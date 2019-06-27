@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
@@ -19,13 +22,17 @@ import org.json.JSONObject;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 public class cargar extends Activity
 {
 	public List<usurmm> promedioLista =new ArrayList<>();;
 	public List<usurmm> usurr=new ArrayList<>();
 
 	String user,cont;
+	String dat="0";
 	InputStream is =null;
 	String line=null;
 	String result=null;
@@ -42,7 +49,7 @@ public class cargar extends Activity
 		usurmm busca=new usurmm();
 
 		ip c= new ip();
-		String ipt=c.ip();
+		final String ipt=c.ip();
 		//datoss("http://192.168.0.7:80/AppAndroid/usulist.php");
 		//usurr.add(new usurmm(jo.getString("USUARIO"),jo.getString("CONTRASENA"),jo.getString("NOMBRE"),jo.getString("TIPO")));
 		///promedioLista=usurr;
@@ -98,51 +105,188 @@ public class cargar extends Activity
 						final String uss=promedioLista.get(p).getUsuario();
 						//bs.buscu(cc,uss);
 						//String dat=cc.GetDato();
-						String dat="0";
-						if(dat.equals("1")|| dat.equals("2")){
-							Intent intent=new Intent(cargar.this,engre.class);
-							intent.putExtra("Usuario",uss);
-							startActivity(intent);
-							finish();
-						}else{
-							AlertDialog.Builder alert= new AlertDialog.Builder(cargar.this);
+						String Ur="http://"+ipt+":80/AppAndroid/inicio_bdbuc.php?usuario="+uss;
+						JsonArrayRequest jsonArray=new JsonArrayRequest(Ur, new Response.Listener<JSONArray>() {
+							@Override
+							public void onResponse(JSONArray response) {
+								JSONObject j = null;
 
-							alert.setMessage("Desea Registrar la Hoja de Vida")
-									.setCancelable(false)
-									.setPositiveButton("si", new DialogInterface.OnClickListener(){
-										@Override
-										public void onClick(DialogInterface dialog,int which){
-											Intent intent=new Intent(cargar.this,menuha.class);
-											//bs.mot(uss,"0");
+								for (int i = 0; i < response.length(); i++) {
+									try {
 
-											intent.putExtra("Usuario",uss);
+										j = response.getJSONObject(i);
+										//j.getString("DATO");
+										dat=j.getString("DATO");
 
-											startActivity(intent);
-											finish();
+									} catch (JSONException e) {
+										Toast.makeText(getApplicationContext(), "puta", Toast.LENGTH_LONG).show();
+
+									}
+
+								}
+								if(dat.equals("1")|| dat.equals("2")){
+									Intent intent=new Intent(cargar.this,engre.class);
+									intent.putExtra("Usuario",uss);
+									startActivity(intent);
+									finish();
+								}else{
+									AlertDialog.Builder alert= new AlertDialog.Builder(cargar.this);
+
+									alert.setMessage("Desea Registrar la Hoja de Vida")
+											.setCancelable(false)
+											.setPositiveButton("si", new DialogInterface.OnClickListener(){
+												@Override
+												public void onClick(DialogInterface dialog,int which){
+													Intent intent=new Intent(cargar.this,menuha.class);
+													String ur="http://"+ipt+":80/AppAndroid/inicio_bdmod.php";
+													StringRequest st=new StringRequest(Request.Method.POST,ur,new Response.Listener<String>(){
 
 
 
-										}
 
-									})
-									.setNegativeButton("no", new DialogInterface.OnClickListener(){
-										@Override
-										public void onClick(DialogInterface dialog,int which){
-											Intent intent=new Intent(cargar.this,engre.class);
-											//bs.mot(uss,"2");
-											startActivity(intent);
-											finish();
+
+														public void onResponse(String response){
 
 
 
-											dialog.cancel();
-										}
+														}
 
-									});
-							AlertDialog titulo=alert.create();
-							titulo.setTitle("Alerta");
-							titulo.show();
-						}
+
+
+													},new Response.ErrorListener(){
+
+
+
+
+
+														public void onErrorResponse(VolleyError error){
+
+															Toast.makeText(getApplicationContext(),"Conexion Fallida",Toast.LENGTH_SHORT).show();
+
+
+
+
+
+														}
+
+
+
+
+													}){
+
+														protected Map<String, String> getParams() throws AuthFailureError {
+
+															Map<String, String> parametros=new HashMap<String, String>();
+															String usur=uss;
+
+															parametros.put("usuario",usur);
+															parametros.put("opcion","Usuario1");
+															parametros.put("dato","2");
+
+															return parametros;
+														}
+													};
+													RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
+
+													requestQueue.add(st);
+													intent.putExtra("Usuario",uss);
+													//intent.putExtra("deci","0");
+
+													startActivity(intent);
+													finish();
+
+
+
+												}
+
+											})
+											.setNegativeButton("no", new DialogInterface.OnClickListener(){
+												@Override
+												public void onClick(DialogInterface dialog,int which){
+													Intent intent=new Intent(cargar.this,engre.class);
+													String ur="http://"+ipt+":80/AppAndroid/inicio_bdmod.php";
+													StringRequest strindd=new StringRequest(Request.Method.POST,ur,new Response.Listener<String>(){
+
+
+
+
+
+														public void onResponse(String response){
+
+
+
+														}
+
+
+
+													},new Response.ErrorListener(){
+
+
+
+
+
+														public void onErrorResponse(VolleyError error){
+
+															Toast.makeText(getApplicationContext(),"Conexion Fallida",Toast.LENGTH_SHORT).show();
+
+
+
+
+
+														}
+
+
+
+
+													}){
+
+														protected Map<String, String> getParams() throws AuthFailureError {
+
+															Map<String, String> parametros=new HashMap<String, String>();
+															String usur=uss;
+
+															parametros.put("usuario",usur);
+															parametros.put("opcion","Usuario1");
+															parametros.put("dato","2");
+
+															return parametros;
+														}
+													};
+													RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
+
+													requestQueue.add(strindd);
+													//bs.mot(uss,"2");
+													intent.putExtra("Usuario",uss);
+													startActivity(intent);
+													finish();
+
+
+
+													dialog.cancel();
+												}
+
+											});
+									AlertDialog titulo=alert.create();
+									titulo.setTitle("Alerta");
+									titulo.show();
+								}
+
+
+
+
+							}
+						}, new Response.ErrorListener() {
+							@Override
+							public void onErrorResponse(VolleyError error) {
+
+							}
+						});
+						RequestQueue requestQueue;
+						requestQueue= Volley.newRequestQueue(getApplicationContext());
+						requestQueue.add(jsonArray);
+
+
+
 
 					}
 					else{
@@ -193,6 +337,9 @@ public class cargar extends Activity
 
 
 
+	}
+	public  void mete(String d){
+		dat=d;
 	}
 
 

@@ -59,7 +59,7 @@ public class registrar extends AppCompatActivity
 				servicioH("http://"+ipt+":80/AppAndroid/h_datos.php");
 				servicioE("http://"+ipt+":80/AppAndroid/h_estudios.php");
 				servicioEx("http://"+ipt+":80/AppAndroid/h_experiencia.php");
-				//servicoIni("http://"+ipt+":80/AppAndroid/inicio_bd.php");
+				servicoIni("http://"+ipt+":80/AppAndroid/inicio_bd.php");
 				Toast.makeText(getApplicationContext(), "usuario Agregado",Toast.LENGTH_LONG).show();
 				Intent intent=new Intent(registrar.this,MainActivity.class);
 			    startActivity(intent);
