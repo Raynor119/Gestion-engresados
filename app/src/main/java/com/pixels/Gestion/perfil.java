@@ -100,18 +100,18 @@ public class perfil extends AppCompatActivity
 
 					}
 
-					nombre.setText(""+promedioLista.get(p).getNombre());
-					apellidos.setText(""+promedioLista.get(p).getApellido());
-					fechan.setText(""+promedioLista.get(p).getFechaden());
-					email.setText(""+promedioLista.get(p).getEmail());
-					luagrdn.setText(""+promedioLista.get(p).getLugarden());
-					edad.setText(""+promedioLista.get(p).getEdad());
-					cc.setText(""+promedioLista.get(p).getCec());
-					lugarex.setText(""+promedioLista.get(p).getLugardeex());
-					ocupacion.setText(""+promedioLista.get(p).getOcupacion());
-					direcc.setText(""+promedioLista.get(p).getDirecc());
-					estadoc.setText(""+promedioLista.get(p).getEstadic());
-					celular.setText(""+promedioLista.get(p).getCelular());
+					nombre.setText(" "+promedioLista.get(p).getNombre());
+					apellidos.setText(" "+promedioLista.get(p).getApellido());
+					fechan.setText(" "+promedioLista.get(p).getFechaden());
+					email.setText(" "+promedioLista.get(p).getEmail());
+					luagrdn.setText(" "+promedioLista.get(p).getLugarden());
+					edad.setText(" "+promedioLista.get(p).getEdad());
+					cc.setText(" "+promedioLista.get(p).getCec());
+					lugarex.setText(" "+promedioLista.get(p).getLugardeex());
+					ocupacion.setText(" "+promedioLista.get(p).getOcupacion());
+					direcc.setText(" "+promedioLista.get(p).getDirecc());
+					estadoc.setText(" "+promedioLista.get(p).getEstadic());
+					celular.setText(" "+promedioLista.get(p).getCelular());
 					
 					
 					
