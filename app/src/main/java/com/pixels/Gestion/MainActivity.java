@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity
 		
 		intent.putExtra("Usuario",usr);
 		intent.putExtra("Contraseña",cont);
+
 		startActivity(intent);
 		finish();
 		

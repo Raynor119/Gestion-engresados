@@ -12,303 +12,315 @@
 		android:gravity="center_horizontal">
 
 		<LinearLayout
-			android:orientation="vertical"
 			android:layout_width="match_parent"
-			android:layout_height="match_parent">
+			android:layout_height="match_parent"
+			android:orientation="vertical">
 
 			<ImageView
-				android:src="@mipmap/leon_general"
 				android:layout_width="150dp"
 				android:layout_height="150dp"
 				android:layout_gravity="center_horizontal"
-				android:layout_marginTop="10dp"/>
+				android:layout_marginTop="10dp"
+				android:src="@mipmap/leon_general" />
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
+				android:layout_marginLeft="22dp"
 				android:layout_marginTop="25dp"
-				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Nombre: "
-					android:layout_marginTop="5dp"/>
+					android:layout_marginTop="5dp"
+					android:text="Nombre: " />
 
 				<TextView
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:ems="10"
 					android:id="@+id/nombreh"
-					android:layout_marginTop="3dp"
-					android:layout_gravity="center_vertical|center_horizontal"/>
-
-			</LinearLayout>
-
-			<LinearLayout
-				android:orientation="horizontal"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
-				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
-
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Apellidos:"
-					android:layout_marginTop="5dp"/>
-
-				<TextView
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
 					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/apellidoh"/>
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
-
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Fecha de Nacimiento: "
-					android:layout_marginTop="5dp"/>
-
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
-					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/fNmh"/>
-
-			</LinearLayout>
-
-			<LinearLayout
-				android:orientation="horizontal"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
 				android:layout_marginTop="40dp"
-				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Email: "
-					android:layout_marginTop="5dp"/>
+					android:layout_marginTop="5dp"
+					android:text="Apellidos:" />
 
 				<TextView
+					android:id="@+id/apellidoh"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
 					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/emailh"/>
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Lugar de Nacimiento: "
-					android:layout_marginTop="5dp"/>
+					android:layout_marginTop="5dp"
+					android:text="Fecha de Nacimiento: " />
 
 				<TextView
+					android:id="@+id/fNmh"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
 					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/lNmh"/>
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Edad: "
-					android:layout_gravity="center_vertical|center_horizontal"
-					android:layout_marginTop="5dp"/>
+					android:layout_marginTop="5dp"
+					android:text="Email: " />
 
 				<TextView
+					android:id="@+id/emailh"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
 					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/edadh"/>
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Cedula de Ciudadania: "
-					android:layout_marginTop="5dp"/>
+					android:layout_marginTop="5dp"
+					android:text="Lugar de Nacimiento: " />
 
 				<TextView
+					android:id="@+id/lNmh"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
 					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/CCh"/>
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Lugar de Expedicion: "
-					android:layout_marginTop="5dp"/>
+					android:layout_gravity="center_vertical|center_horizontal"
+					android:layout_marginTop="5dp"
+					android:text="Edad: " />
 
 				<TextView
+					android:id="@+id/edadh"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
 					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/LEXh"/>
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Ocupacion: "
-					android:layout_marginTop="5dp"/>
+					android:layout_marginTop="5dp"
+					android:text="Cedula de Ciudadania: " />
 
 				<TextView
+					android:id="@+id/CCh"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
 					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/ocupacioh"/>
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Direccion de Residencia: "
-					android:layout_marginTop="5dp"/>
+					android:layout_marginTop="5dp"
+					android:text="Lugar de Expedicion: " />
 
 				<TextView
+					android:id="@+id/LEXh"
 					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical|center_horizontal"
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="22dp"
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:text="Ocupacion: " />
+
+				<TextView
+					android:id="@+id/ocupacioh"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical|center_horizontal"
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="22dp"
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:text="Direccion de Residencia: " />
+
+				<TextView
 					android:id="@+id/dic"
-					android:layout_marginTop="3dp"
-					android:layout_gravity="center_vertical|center_horizontal"
+					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"/>
+					android:layout_gravity="center_vertical|center_horizontal"
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Estado Civil: "
-					android:layout_marginTop="5dp"/>
+					android:layout_marginTop="5dp"
+					android:text="Estado Civil: " />
 
 				<TextView
+					android:id="@+id/estadoh"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
 					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/estadoh"/>
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="40dp"
 				android:layout_marginLeft="22dp"
-				android:layout_marginRight="35dp">
+				android:layout_marginTop="40dp"
+				android:layout_marginRight="35dp"
+				android:orientation="horizontal">
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="Celular: "
-					android:layout_marginTop="5dp"/>
+					android:layout_marginTop="5dp"
+					android:text="Celular: " />
 
 				<TextView
+					android:id="@+id/celuj"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:ems="10"
-					android:layout_marginTop="3dp"
 					android:layout_gravity="center_vertical|center_horizontal"
-					android:id="@+id/celuj"/>
+					android:layout_marginTop="3dp"
+					android:background="@drawable/per"
+					android:ems="10" />
 
 			</LinearLayout>
 
@@ -324,9 +336,9 @@
 			</LinearLayout>
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="wrap_content"
-				android:layout_height="53dp"/>
+				android:layout_height="53dp"
+				android:orientation="horizontal" />
 
 		</LinearLayout>
 
