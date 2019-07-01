@@ -1,51 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pixels.Gestion" >
-	
-	<uses-permission android:name="android.permission.INTERNET">
-      </uses-permission>
+    package="com.pixels.Gestion">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-		android:resizeableActivity = "true">
+
+        android:resizeableActivity="true"
+        android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
             android:label="Iniciar Sesión"
-			android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-		<activity
-			android:name=".cargar"/>
-		<activity
-			android:name=".registrar"
-			android:label="Registrarse"
-			android:theme="@style/AppTheme"/>
-		<activity
-			android:name=".menuha"
-			android:label="Registrar Hoja de Vida"
-            android:theme="@style/AppTheme.NoActionBar"/>
-	    <activity
-			android:name=".actiengre"/>
-		<activity
-			android:name=".emprea"/>
-		<activity
-			android:name=".admina"/>
-		<activity
-			android:name=".engre"
-			android:label="Menu"
-			android:theme="@style/AppTheme"/>
-		<activity
-			android:name=".perfil"
-			android:label="Perfil"
-			android:theme="@style/AppTheme"/>
-	    
+        <activity android:name=".cargar" />
+        <activity
+            android:name=".registrar"
+            android:label="Registrarse"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".menuha"
+            android:label="Registrar Hoja de Vida"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".actiengre" />
+        <activity android:name=".emprea" />
+        <activity android:name=".admina" />
+        <activity
+            android:name=".engre"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".perfil"
+            android:label="Perfil"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
