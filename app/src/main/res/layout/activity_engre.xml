@@ -5,13 +5,35 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 
-	<Button
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="Button"
-		android:id="@+id/activityengreButton1"
-		android:layout_gravity="center_vertical|center_horizontal"
-		android:onClick="perfi"/>
+    <Button
+        android:id="@+id/activityengreButton1"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/botoh"
+        android:layout_marginTop="30dp"
+        android:text="Hola de Vida" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/botoh"
+        android:text="Buscar Ofertas de Empleo"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/botoh"
+        android:text="Seleccion de Encuesta"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>
 
