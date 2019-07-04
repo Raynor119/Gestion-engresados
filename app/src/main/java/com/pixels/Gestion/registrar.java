@@ -319,7 +319,7 @@ public class registrar extends AppCompatActivity
 
 
 				public void onResponse(String response){
-
+ 
 					
 
 				}
