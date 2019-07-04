@@ -5,15 +5,16 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/activityengreButton1"
-        android:layout_width="131dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/botoh"
-        android:layout_marginTop="30dp"
-        android:text="Hola de Vida" />
+	<Button
+		android:id="@+id/activityengreButton1"
+		android:layout_width="131dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/botoh"
+		android:onClick="hojav"
+		android:text="Hola de Vida"
+		android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button"

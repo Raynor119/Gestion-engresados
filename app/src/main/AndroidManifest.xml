@@ -40,6 +40,10 @@
             android:name=".perfil"
             android:label="Perfil"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".menuhah"
+            android:label="Hoja de Vida"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

@@ -39,8 +39,11 @@ public class engre extends AppCompatActivity
 	}
 
 	
-	public void perfi(View v){
-
+	public void hojav(View v){
+		Intent intent=new Intent(engre.this,menuhah.class);
+		intent.putExtra("Usuario",user);
+		startActivity(intent);
+		finish();
 	}
 	
 }
