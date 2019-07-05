@@ -23,11 +23,11 @@ import java.util.Map;
 
 public class experienceh extends Fragment
 {
-	
+	static 	EditText cellrb2,cellrb3,nomrb2,nomrb3,celrf2,celrf3,nomrf2,nomrf3,cur2,cur3;
 	View vista;
 	Button bt;
 	Intent i;
-	EditText primarios,secundarios,superiores,cursos,celurb,nombrerb,celurf,nombrerf;
+	static EditText primarios,secundarios,superiores,cursos,celurb,nombrerb,celurf,nombrerf;
 	public experienceh() {
         // Required empty public constructor
     }
@@ -52,10 +52,21 @@ public class experienceh extends Fragment
 		nombrerb=(EditText)vista.findViewById(R.id.NRe1);
 		celurf=(EditText)vista.findViewById(R.id.CeRF1);
 		nombrerf=(EditText)vista.findViewById(R.id.NRFn1);
+
+		cur2=(EditText)vista.findViewById(R.id.cuF1ros2);
+		cur3=(EditText)vista.findViewById(R.id.cuF1ros3);
+		cellrb2=(EditText)vista.findViewById(R.id.RefLN2);
+		cellrb3=(EditText)vista.findViewById(R.id.RefLN3);
+		nomrb2=(EditText)vista.findViewById(R.id.NRe2);
+		nomrb3=(EditText)vista.findViewById(R.id.NRe3);
+		celrf2=(EditText)vista.findViewById(R.id.CeRF2);
+		celrf3=(EditText)vista.findViewById(R.id.CeRF3);
+		nomrf2=(EditText)vista.findViewById(R.id.NRFn2);
+		nomrf3=(EditText)vista.findViewById(R.id.NRFn3);
 		bt.setOnClickListener(new View.OnClickListener(){
 			@Override
 			public void onClick(View view){
-			String cd=hojav.onclic();
+			String cd=hojavh.onclic();
 			final String pri=String.valueOf(primarios.getText().toString());
 			final String se=String.valueOf(secundarios.getText().toString());
 			final String sup=String.valueOf(superiores.getText().toString());
@@ -76,37 +87,27 @@ public class experienceh extends Fragment
 				Toast.makeText(getActivity(), "Llene todos los Campos",Toast.LENGTH_LONG).show();
 				}else
 				{
-				final String no=hojav.nom;
-					final String ap=hojav.apelos;
-					final String fec=hojav.feccn;
-					final String ema=hojav.ema;
-					final String lugn=hojav.lugarn;
-					final String ed=hojav.ed;
-					final String ccc=hojav.c;
-					final String lux=hojav.lex;
-					final String ocup=hojav.ocup;
-					final String dcc=hojav.dicc;
-					final String sta=hojav.est;
-					final String cell=hojav.clu;
+				final String no=hojavh.nom;
+					final String ap=hojavh.apelos;
+					final String fec=hojavh.feccn;
+					final String ema=hojavh.ema;
+					final String lugn=hojavh.lugarn;
+					final String ed=hojavh.ed;
+					final String ccc=hojavh.c;
+					final String lux=hojavh.lex;
+					final String ocup=hojavh.ocup;
+					final String dcc=hojavh.dicc;
+					final String sta=hojavh.est;
+					final String cell=hojavh.clu;
 				
 				B_hoja bs=new B_hoja(getActivity());
 				
-				final String useer=menuha.user;
+				final String useer=menuhah.user;
 					
 				//bs.agreH(useer,no,ap,fec,ema,lugn,ed,ccc,lux,ocup,dcc,sta,cell);
 				B_experice bd=new B_experice(getActivity());
-				EditText cellrb2,cellrb3,nomrb2,nomrb3,celrf2,celrf3,nomrf2,nomrf3,cur2,cur3;
-				
-				cur2=(EditText)vista.findViewById(R.id.cuF1ros2);
-				cur3=(EditText)vista.findViewById(R.id.cuF1ros3);
-				cellrb2=(EditText)vista.findViewById(R.id.RefLN2);
-				cellrb3=(EditText)vista.findViewById(R.id.RefLN3);
-				nomrb2=(EditText)vista.findViewById(R.id.NRe2);
-				nomrb3=(EditText)vista.findViewById(R.id.NRe3);
-				celrf2=(EditText)vista.findViewById(R.id.CeRF2);
-				celrf3=(EditText)vista.findViewById(R.id.CeRF3);
-				nomrf2=(EditText)vista.findViewById(R.id.NRFn2);
-				nomrf3=(EditText)vista.findViewById(R.id.NRFn3);
+
+
 				final String curf=cur+"/"+cur2.getText().toString()+"/"+cur3.getText().toString();
 				final String cerbF=cerb+"/"+cellrb2.getText().toString()+"/"+cellrb3.getText().toString();
 				final String nomrbF=nomrb+"/"+nomrb2.getText().toString()+"/"+nomrb3.getText().toString();
@@ -361,9 +362,9 @@ public class experienceh extends Fragment
 
 
 
-					i=new  Intent(getActivity(),engre.class);
-					i.putExtra("Usuario",useer);
-startActivity(i);
+//					i=new  Intent(getActivity(),engre.class);
+//					i.putExtra("Usuario",useer);
+//startActivity(i);
 
 
 					getActivity().finish();

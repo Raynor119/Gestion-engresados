@@ -43,7 +43,8 @@ public class engre extends AppCompatActivity
 		Intent intent=new Intent(engre.this,menuhah.class);
 		intent.putExtra("Usuario",user);
 		startActivity(intent);
-		finish();
+
 	}
+
 	
 }

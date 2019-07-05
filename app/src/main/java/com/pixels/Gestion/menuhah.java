@@ -1,7 +1,6 @@
 package com.pixels.Gestion;
 
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -25,11 +24,17 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class menuhah extends AppCompatActivity implements ActionBar.TabListener, ViewPager.OnPageChangeListener {
 	
 	private SectionsPagerAdapter mSectionsPagerAdapter;
 	private ViewPager mViewPager;
     String dat="0";
+    public List<listhoja> promedioLista =new ArrayList<>();;
+    public List<listexperience> pres =new ArrayList<>();;
+    public List<lisref> expe =new ArrayList<>();;
 static 	public String user;
 	
 	@Override
@@ -91,10 +96,7 @@ static 	public String user;
 						.setNegativeButton("no", new DialogInterface.OnClickListener(){
 							@Override
 							public void onClick(DialogInterface dialog,int which){
-                                Intent intent=new Intent(menuhah.this,engre.class);
 
-                                intent.putExtra("Usuario",user);
-                                startActivity(intent);
                                 finish();
 
 								dialog.cancel();
@@ -106,9 +108,315 @@ static 	public String user;
                     titulo.show();
 					
                 }else{
-                    Toast.makeText(getApplicationContext(), "ya lo lleno", Toast.LENGTH_LONG).show();
+                    ip c= new ip();
+                    String ipt=c.ip();
+                    String Url="http://"+ipt+":80/AppAndroid/hdatoslist.php";
+                    JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Url, new Response.Listener<JSONArray>() {
+
+                        @Override
+                        public void onResponse(JSONArray response) {
+                            JSONObject jo = null;
+                            //Toast.makeText(getApplicationContext(), "entro2",Toast.LENGTH_LONG).show();
+                            for (int i = 0; i < response.length(); i++) {
+                                try {
+                                    //Toast.makeText(getApplicationContext(), "entro3",Toast.LENGTH_LONG).show();
+                                    jo = response.getJSONObject(i);
+                                    promedioLista.add(new listhoja(jo.getString("USUARIO"), jo.getString("NOMBRE"), jo.getString("APELLIDOS"), jo.getString("FECHADEN"), jo.getString("EMAIL"), jo.getString("LUGARDN"), jo.getString("EDAD"), jo.getString("CEDULAC"), jo.getString("LUGAREX"), jo.getString("OCUPACION"), jo.getString("DIRECC"), jo.getString("ESTADOC"), jo.getString("CELULAR")));
+                                    promedioLista.get(i).getUsuario();
+                                    //Toast.makeText(getApplicationContext(), promedioLista.get(i).getUsuario()+" :t",Toast.LENGTH_LONG).show();
+                                    //String v=jo.getString("USUARIO");
+                                    //Toast.makeText(getApplicationContext(), v,Toast.LENGTH_LONG).show();
+                                } catch (JSONException e) {
+                                    Toast.makeText(getApplicationContext(), "puta", Toast.LENGTH_LONG).show();
+
+                                }
+                            }
+
+                            int i;
+                            int confu=0;
+                            int confc=0;
+                            int p=0;
+
+                            for(i=0;i<promedioLista.size();i++){
+
+
+                                String usurrr=promedioLista.get(i).getUsuario();
+                                if(usurrr.equals(user)){
+                                    confu=1;
+                                    p=i;
+                                }
+
+                            }
+
+                            hojavh.nombre.setText(promedioLista.get(p).getNombre());
+                            hojavh.apellidos.setText(promedioLista.get(p).getApellido());
+                            hojavh.fechan.setText(promedioLista.get(p).getFechaden());
+                            hojavh.email.setText(promedioLista.get(p).getEmail());
+                            hojavh.luagrdn.setText(promedioLista.get(p).getLugarden());
+                            hojavh.edad.setText(promedioLista.get(p).getEdad());
+                            hojavh.cc.setText(promedioLista.get(p).getCec());
+                            hojavh.lugarex.setText(promedioLista.get(p).getLugardeex());
+                            hojavh.ocupacion.setText(promedioLista.get(p).getOcupacion());
+                            hojavh.direcc.setText(promedioLista.get(p).getDirecc());
+                            hojavh.estadoc.setText(promedioLista.get(p).getEstadic());
+                            hojavh.celular.setText(promedioLista.get(p).getCelular());
+
+
+
+
+
+                        }
+                    }	, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(getApplicationContext(), "errorConexion",Toast.LENGTH_LONG).show();
+
+                        }
+                    });
+
+                    RequestQueue requestQueue;
+                    requestQueue= Volley.newRequestQueue(getApplicationContext());
+                    requestQueue.add(jsonArrayRequest);
+
+
+                    String Ul="http://"+ipt+":80/AppAndroid/hestudi.php";
+                     jsonArrayRequest=new JsonArrayRequest(Ul, new Response.Listener<JSONArray>() {
+
+                        @Override
+                        public void onResponse(JSONArray response) {
+                            JSONObject jo = null;
+                            //Toast.makeText(getApplicationContext(), "entro2",Toast.LENGTH_LONG).show();
+                            for (int i = 0; i < response.length(); i++) {
+                                try {
+                                    //Toast.makeText(getApplicationContext(), "entro3",Toast.LENGTH_LONG).show();
+                                    jo = response.getJSONObject(i);
+                                    pres.add(new listexperience(jo.getString("USUARIO"), jo.getString("PRIMARIOS"), jo.getString("SECUNDARIOS"), jo.getString("SUPERIORES"), jo.getString("OTROS")));
+                                    // promedioLista.get(i).getUsuario();
+                                    //Toast.makeText(getApplicationContext(), promedioLista.get(i).getUsuario()+" :t",Toast.LENGTH_LONG).show();
+                                    //String v=jo.getString("USUARIO");
+                                    //Toast.makeText(getApplicationContext(), v,Toast.LENGTH_LONG).show();
+                                } catch (JSONException e) {
+                                    Toast.makeText(getApplicationContext(), "puta", Toast.LENGTH_LONG).show();
+
+                                }
+                            }
+
+                            int i;
+                            int confu=0;
+                            int confc=0;
+                            int p=0;
+
+                            for(i=0;i<pres.size();i++){
+
+
+                                String usurrr=pres.get(i).getUsuario();
+                                if(usurrr.equals(user)){
+                                    confu=1;
+                                    p=i;
+                                }
+
+                            }
+
+                            experienceh.primarios.setText(pres.get(p).getPrimarios());
+                            experienceh.secundarios.setText(pres.get(p).getSecundarios());
+                            experienceh.superiores.setText(pres.get(p).getSuperiores());
+                            String otr=pres.get(p).getCursos();
+                            int r=0;
+                            String palabra="";
+                            for(int v=0;v<otr.length();v++){
+                                char letra=otr.charAt(v);
+                                String nos=""+letra;
+                                if(nos.equals("/")){
+                                    if (r == 0) {
+                                        experienceh.cursos.setText(palabra);
+                                    }
+                                    if(r==1){
+                                        experienceh.cur2.setText(palabra);
+                                    }
+                                    r++;
+                                    palabra="";
+                                }else {
+                                    palabra=palabra+letra;
+
+                                }
+                                if(r==2){
+                                    experienceh.cur3.setText(palabra);
+                                }
+                            }
+
+
+
+
+
+                        }
+                    }	, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(getApplicationContext(), "errorConexion",Toast.LENGTH_LONG).show();
+
+                        }
+                    });
+
+                    requestQueue= Volley.newRequestQueue(getApplicationContext());
+                    requestQueue.add(jsonArrayRequest);
+                    String Ull="http://"+ipt+":80/AppAndroid/hexpere.php";
+                    jsonArrayRequest=new JsonArrayRequest(Ull, new Response.Listener<JSONArray>() {
+
+                        @Override
+                        public void onResponse(JSONArray response) {
+                            JSONObject jo = null;
+                            //Toast.makeText(getApplicationContext(), "entro2",Toast.LENGTH_LONG).show();
+                            for (int i = 0; i < response.length(); i++) {
+                                try {
+                                    //Toast.makeText(getApplicationContext(), "entro3",Toast.LENGTH_LONG).show();
+                                    jo = response.getJSONObject(i);
+                                    expe.add(new lisref(jo.getString("USUARIO"), jo.getString("CELULARRL"), jo.getString("NOMBRERL"), jo.getString("CELULARRF"), jo.getString("NOMBRERF")));
+                                    // promedioLista.get(i).getUsuario();
+                                    //Toast.makeText(getApplicationContext(), promedioLista.get(i).getUsuario()+" :t",Toast.LENGTH_LONG).show();
+                                    //String v=jo.getString("USUARIO");
+                                    //Toast.makeText(getApplicationContext(), v,Toast.LENGTH_LONG).show();
+                                } catch (JSONException e) {
+                                    Toast.makeText(getApplicationContext(), "puta", Toast.LENGTH_LONG).show();
+
+                                }
+                            }
+
+                            int i;
+                            int confu=0;
+                            int confc=0;
+                            int p=0;
+
+                            for(i=0;i<expe.size();i++){
+
+
+                                String usurrr=expe.get(i).getUsuario();
+                                if(usurrr.equals(user)){
+                                    confu=1;
+                                    p=i;
+                                }
+
+                            }
+
+
+                            String otr=expe.get(p).getCelularrb();
+                            int r=0;
+                            String palabra="";
+                            for(int v=0;v<otr.length();v++){
+                                char letra=otr.charAt(v);
+                                String nos=""+letra;
+                                if(nos.equals("/")){
+                                    if (r == 0) {
+                                        experienceh.celurb.setText(palabra);
+                                    }
+                                    if(r==1){
+                                        experienceh.cellrb2.setText(palabra);
+                                    }
+                                    r++;
+                                    palabra="";
+                                }else {
+                                    palabra=palabra+letra;
+
+                                }
+                                if(r==2){
+                                    experienceh.cellrb3.setText(palabra);
+                                }
+                            }
+                             otr=expe.get(p).getNombrerb();
+                             r=0;
+                             palabra="";
+                            for(int v=0;v<otr.length();v++){
+                                char letra=otr.charAt(v);
+                                String nos=""+letra;
+                                if(nos.equals("/")){
+                                    if (r == 0) {
+                                        experienceh.nombrerb.setText(palabra);
+                                    }
+                                    if(r==1){
+                                        experienceh.nomrb2.setText(palabra);
+                                    }
+                                    r++;
+                                    palabra="";
+                                }else {
+                                    palabra=palabra+letra;
+
+                                }
+                                if(r==2){
+                                    experienceh.nomrb3.setText(palabra);
+                                }
+                            }
+                            otr=expe.get(p).getCelularrf();
+                            r=0;
+                            palabra="";
+                            for(int v=0;v<otr.length();v++){
+                                char letra=otr.charAt(v);
+                                String nos=""+letra;
+                                if(nos.equals("/")){
+                                    if (r == 0) {
+                                        experienceh.celurf.setText(palabra);
+                                    }
+                                    if(r==1){
+                                        experienceh.celrf2.setText(palabra);
+                                    }
+                                    r++;
+                                    palabra="";
+                                }else {
+                                    palabra=palabra+letra;
+
+                                }
+                                if(r==2){
+                                    experienceh.celrf3.setText(palabra);
+                                }
+                            }
+                            otr=expe.get(p).getNombrerf();
+                            r=0;
+                            palabra="";
+                            for(int v=0;v<otr.length();v++){
+                                char letra=otr.charAt(v);
+                                String nos=""+letra;
+                                if(nos.equals("/")){
+                                    if (r == 0) {
+                                        experienceh.nombrerf.setText(palabra);
+                                    }
+                                    if(r==1){
+                                        experienceh.nomrf2.setText(palabra);
+                                    }
+                                    r++;
+                                    palabra="";
+                                }else {
+                                    palabra=palabra+letra;
+
+                                }
+                                if(r==2){
+                                    experienceh.nomrf3.setText(palabra);
+                                }
+                            }
+
+
+
+
+
+
+
+                        }
+                    }	, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(getApplicationContext(), "errorConexion",Toast.LENGTH_LONG).show();
+
+                        }
+                    });
+
+                    requestQueue= Volley.newRequestQueue(getApplicationContext());
+                    requestQueue.add(jsonArrayRequest);
+
+
+
+
+
+
 
                 }
+
 
 
 

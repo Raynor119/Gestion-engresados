@@ -47,7 +47,7 @@ public class B_experice extends SQLiteOpenHelper
         List<listexperience> usurr=new ArrayList<>();
         if(cursor.moveToFirst()){
             do{
-                usurr.add(new listexperience(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5),cursor.getString(6),cursor.getString(7),cursor.getString(8)));
+                usurr.add(new listexperience(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4)));
 
 
             }while(cursor.moveToNext());
@@ -67,11 +67,7 @@ public class B_experice extends SQLiteOpenHelper
                 datos.setSecundarios(cursor.getString(2));
 				datos.setSuperiores(cursor.getString(3));
 				datos.setCursos(cursor.getString(4));
-				datos.setCelularrb(cursor.getString(5));
-				datos.setNombrerb(cursor.getString(6));
-				datos.setCelularrf(cursor.getString(7));
-				datos.setNombrerf(cursor.getString(8));
-				
+
 				
             }while(cursor.moveToNext());
         }

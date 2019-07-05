@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity
 		intent.putExtra("Contraseña",cont);
 
 		startActivity(intent);
-		finish();
+
 		
 		}
 	}

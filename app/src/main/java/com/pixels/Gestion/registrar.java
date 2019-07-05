@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.content.Intent;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -61,8 +61,7 @@ public class registrar extends AppCompatActivity
 				servicioEx("http://"+ipt+":80/AppAndroid/h_experiencia.php");
 				servicoIni("http://"+ipt+":80/AppAndroid/inicio_bd.php");
 				Toast.makeText(getApplicationContext(), "usuario Agregado",Toast.LENGTH_LONG).show();
-				Intent intent=new Intent(registrar.this,MainActivity.class);
-			    startActivity(intent);
+
 				finish();
 			}
 		   }
