@@ -9,7 +9,9 @@
         android:icon="@mipmap/ic_launcher"
         android:resizeableActivity="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ofertas"></activity>
+        <activity android:name=".admi"></activity>
+        <activity android:name=".empresa" />
+        <activity android:name=".ofertas" />
         <activity
             android:name=".MainActivity"
             android:label="Iniciar Sesión"

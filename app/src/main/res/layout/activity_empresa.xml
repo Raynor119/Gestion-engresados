@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".empresa">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="214dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/botoh"
+        android:text="Registrar Oferta Laboral"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="214dp"
+        android:layout_height="67dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/botoh"
+        android:layout_gravity="center_horizontal"
+        android:text="VER OFERTAS REGISTRADAS" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="214dp"
+        android:layout_height="67dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/botoh"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="VER OFERTAS APLICADAS" />
+</LinearLayout>
