@@ -8,43 +8,47 @@
 
 	<LinearLayout
 		android:orientation="vertical"
-		android:layout_width="330dp"
-		android:layout_height="559dp"
 		android:layout_gravity="center|center_vertical|center_horizontal"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="15dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginBottom="15dp"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:gravity="center"
 		android:background="@drawable/braarown">
 
 		<ImageView
 			android:id="@+id/inage"
+			android:layout_width="match_parent"
+			android:layout_height="163dp"
 			android:layout_gravity="center_horizontal"
-			android:layout_width="150dp"
-			android:layout_height="184dp"
-			android:src="@mipmap/escudounipamplona1"
-			android:layout_marginTop="17dp"/>
+			android:src="@mipmap/escudounipamplona1" />
 
 		<LinearLayout
-			android:orientation="horizontal"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="65dp"
 			android:layout_marginLeft="20dp"
-			android:layout_marginRight="20dp">
+			android:layout_marginTop="20dp"
+			android:layout_marginRight="20dp"
+			android:orientation="horizontal">
 
 			<ImageView
 				android:id="@+id/imusu"
 				android:layout_width="35dp"
 				android:layout_height="35dp"
-				android:src="@mipmap/usuamer"
-				android:layout_marginTop="5dp"/>
+				android:layout_marginTop="5dp"
+				android:src="@mipmap/usuamer" />
 
 			<EditText
-				android:layout_width="match_parent"
-				android:ems="10"
-				android:layout_height="wrap_content"
-				android:hint="Nombre de Usuario"
-				android:textColorHint="#C0C0C0"
 				android:id="@+id/nombt"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:hint="Nombre de Usuario"
+				android:inputType="textPersonName"
 				android:textColor="#FFFFFF"
-				android:inputType="textPersonName"/>
+				android:textColorHint="#C0C0C0" />
 
 		</LinearLayout>
 
@@ -103,14 +107,14 @@
 		</LinearLayout>
 
 		<Button
+			android:id="@+id/btnm"
 			android:layout_width="160dp"
-			android:layout_height="55dp"
-			android:text="Registrarse"
-			android:layout_marginTop="45dp"
+			android:layout_height="wrap_content"
 			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="25dp"
 			android:background="@drawable/bbutton"
-			android:textColor="#FFFFFF"
-			android:id="@+id/btnm"/>
+			android:text="Registrarse"
+			android:textColor="#FFFFFF" />
 
 	</LinearLayout>
 

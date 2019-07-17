@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".ofertas">
+   >
 
 
     <TextView
@@ -13,99 +13,110 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="EDITAR OFERTA LABORAL"
         android:textColor="#061774"
         android:textSize="24sp" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:orientation="vertical"
-        android:background="@drawable/orfe">
+        >
+
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            >
+            android:background="@drawable/orfe"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
 
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:text="LINK:" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="LINK:      " />
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName" />
-        </LinearLayout>
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:editable="false"
+                    android:ems="10" />
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="TITULO: " />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_weight="1"
-                android:text="TITULO" />
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="DESCRIPCION" />
 
             <EditText
-                android:id="@+id/editText2"
-                android:layout_width="251dp"
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="110dp"
+                android:onClick="edit"
+                android:text="Registrar Oferta" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="DESCRIPCION" />
 
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:ems="10"
-            android:inputType="textPersonName" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="TextView" />
-
+    </ScrollView>
 </LinearLayout>

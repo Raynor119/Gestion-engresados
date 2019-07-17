@@ -30,7 +30,7 @@ public class cargar extends Activity
 {
 	public List<usurmm> promedioLista =new ArrayList<>();;
 	public List<usurmm> usurr=new ArrayList<>();
-
+int p;
 	String user,cont;
 	String dat="0";
 	InputStream is =null;
@@ -82,7 +82,7 @@ public class cargar extends Activity
 				int i;
 				int confu=0;
 				int confc=0;
-				int p=0;
+				 p=0;
 
 				for(i=0;i<promedioLista.size();i++){
 
@@ -124,6 +124,11 @@ public class cargar extends Activity
 									}
 
 								}
+									if(promedioLista.get(p).getTipo().equals("0")){
+
+
+
+
 								if(dat.equals("1")|| dat.equals("2")){
 									Intent intent=new Intent(cargar.this,engre.class);
 									intent.putExtra("Usuario",uss);
@@ -269,7 +274,26 @@ public class cargar extends Activity
 									AlertDialog titulo=alert.create();
 									titulo.setTitle("Alerta");
 									titulo.show();
-								}
+								}}else{
+
+								    if(promedioLista.get(p).getTipo().equals("1")){
+
+
+								        Intent intent=new Intent(cargar.this,admi.class);
+                                        intent.putExtra("Usuario",uss);
+                                        startActivity(intent);
+                                        finish();
+
+                                    }
+                                    if(promedioLista.get(p).getTipo().equals("2")){
+
+                                        Intent intent=new Intent(cargar.this,empresa.class);
+                                        intent.putExtra("Usuario",uss);
+                                        startActivity(intent);
+                                        finish();
+
+                                    }
+                                }
 
 
 
@@ -291,8 +315,7 @@ public class cargar extends Activity
 					}
 					else{
 						Toast.makeText(getApplicationContext(), "Contraseña incorrecta",Toast.LENGTH_LONG).show();
-						Intent intent=new Intent(cargar.this,MainActivity.class);
-						startActivity(intent);
+
 						finish();
 					}
 
@@ -300,8 +323,7 @@ public class cargar extends Activity
 
 				}else{
 					Toast.makeText(getApplicationContext(), "usurio no encontrdo",Toast.LENGTH_LONG).show();
-					Intent intent=new Intent(cargar.this,MainActivity.class);
-					startActivity(intent);
+
 					finish();
 				}
 

@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".admi">
 
     <Button
@@ -15,16 +16,6 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/botoh"
         android:text="Registrar Oferta Laboral"
-        android:textColor="#FFFFFF" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="214dp"
-        android:layout_height="67dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/botoh"
-        android:text="REGISTRAR EVENTO"
         android:textColor="#FFFFFF" />
 
     <Button
