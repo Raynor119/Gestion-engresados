@@ -32,7 +32,7 @@
 		android:layout_gravity="center_vertical|center_horizontal"
 		android:layout_marginTop="80dp"
 		android:background="@drawable/botoh"
-		android:text="Seleccion de Encuesta"
+		android:text="Salir"
 		android:textColor="#FFFFFF" />
 
 </LinearLayout>

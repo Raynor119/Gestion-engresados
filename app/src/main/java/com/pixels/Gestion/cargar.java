@@ -50,9 +50,7 @@ int p;
 
 		ip c= new ip();
 		final String ipt=c.ip();
-		//datoss("http://192.168.0.7:80/AppAndroid/usulist.php");
-		//usurr.add(new usurmm(jo.getString("USUARIO"),jo.getString("CONTRASENA"),jo.getString("NOMBRE"),jo.getString("TIPO")));
-		///promedioLista=usurr;
+
 		String Url="http://"+ipt+":80/AppAndroid/usulist.php";
 
 		// sacar

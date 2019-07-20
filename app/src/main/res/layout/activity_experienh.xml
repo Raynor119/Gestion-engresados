@@ -17,10 +17,10 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Estudios Realisados"
 				android:layout_gravity="center_horizontal"
 				android:layout_marginTop="10dp"
-				android:textSize="20sp"/>
+				android:text="Estudios Realizados"
+				android:textSize="20sp" />
 
 			<LinearLayout
 				android:orientation="horizontal"
@@ -88,10 +88,10 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Cursos"
+				android:layout_gravity="center_vertical|center_horizontal"
 				android:layout_marginTop="51dp"
-				android:textSize="20sp"
-				android:layout_gravity="center_vertical|center_horizontal"/>
+				android:text="Otros"
+				android:textSize="20sp" />
 
 			<LinearLayout
 				android:orientation="horizontal"
@@ -136,188 +136,259 @@
 				android:layout_gravity="center_horizontal"
 				android:layout_marginTop="51dp"
 				android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
 
-			<LinearLayout
-				android:orientation="horizontal"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal"
-				android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:text="Celular" />
 
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Celular"
-					android:layout_marginRight="145dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="55dp"
+                    android:text="Profesion" />
 
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Nombre"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre" />
 
-			</LinearLayout>
+            </LinearLayout>
 
-			<LinearLayout
-				android:orientation="horizontal"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
-				android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal">
 
-				<LinearLayout
-					android:orientation="vertical"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginRight="51dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp">
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:inputType="number"
-						android:id="@+id/RefLN1"/>
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@+id/RefLN1"/>
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
-						android:inputType="number"
-						android:id="@+id/RefLN2"/>
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:id="@+id/RefLN2"/>
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
-						android:inputType="number"
-						android:id="@+id/RefLN3"/>
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:id="@+id/RefLN3"/>
 
-				</LinearLayout>
+                </LinearLayout>
 
-				<LinearLayout
-					android:orientation="vertical"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:id="@+id/NRe1"/>
+                    <EditText
+                        android:id="@+id/RefN1"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" />
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
-						android:id="@+id/NRe2"/>
+                    <EditText
+                        android:id="@+id/RefN2"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="number" />
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
-						android:id="@+id/NRe3"/>
+                    <EditText
+                        android:id="@+id/RefN3"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="number" />
 
-				</LinearLayout>
+                </LinearLayout>
 
-			</LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Referencias Familiares"
-				android:layout_gravity="center_horizontal"
-				android:layout_marginTop="51dp"
-				android:textSize="20sp"/>
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/NRe1"/>
 
-			<LinearLayout
-				android:orientation="horizontal"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal"
-				android:layout_marginTop="30dp">
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/NRe2"/>
 
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Celular"
-					android:layout_marginRight="145dp"/>
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/NRe3"/>
 
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Nombre"/>
+                </LinearLayout>
 
-			</LinearLayout>
+            </LinearLayout>
 
-			<LinearLayout
-				android:orientation="horizontal"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="15dp"
-				android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referencias Familiares"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="51dp"
+                android:textSize="20sp"/>
 
-				<LinearLayout
-					android:orientation="vertical"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginRight="51dp">
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:id="@+id/CeRF1"
-						android:inputType="number"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:text="Celular" />
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
-						android:id="@+id/CeRF2"
-						android:inputType="number"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="55dp"
+                    android:text="Profesion" />
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
-						android:id="@+id/CeRF3"
-						android:inputType="number"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre" />
 
-				</LinearLayout>
+            </LinearLayout>
 
-				<LinearLayout
-					android:orientation="vertical"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal">
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:id="@+id/NRFn1"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp">
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
-						android:id="@+id/NRFn2"/>
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/CeRF1"
+                        android:inputType="number"/>
 
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
-						android:id="@+id/NRFn3"/>
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/CeRF2"
+                        android:inputType="number"/>
 
-				</LinearLayout>
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/CeRF3"
+                        android:inputType="number"/>
 
-			</LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/ReN1"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/ReN2"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/ReN3"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/NRFn1"/>
+
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/NRFn2"/>
+
+                    <EditText
+                        android:layout_width="135dp"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/NRFn3"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
 			<Button
 				android:layout_width="160dp"

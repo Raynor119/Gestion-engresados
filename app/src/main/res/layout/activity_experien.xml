@@ -17,7 +17,7 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Estudios Realisados"
+				android:text="Estudios Realizados"
 				android:layout_gravity="center_horizontal"
 				android:layout_marginTop="10dp"
 				android:textSize="20sp"/>
@@ -88,10 +88,10 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Cursos"
+				android:layout_gravity="center_vertical|center_horizontal"
 				android:layout_marginTop="51dp"
-				android:textSize="20sp"
-				android:layout_gravity="center_vertical|center_horizontal"/>
+				android:text="Otros"
+				android:textSize="20sp" />
 
 			<LinearLayout
 				android:orientation="horizontal"
@@ -137,25 +137,31 @@
 				android:layout_marginTop="51dp"
 				android:textSize="20sp"/>
 
-			<LinearLayout
-				android:orientation="horizontal"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal"
-				android:layout_marginTop="30dp">
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
 
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Celular"
-					android:layout_marginRight="145dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:text="Celular" />
 
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Nombre"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="55dp"
+                    android:text="Profesion" />
 
-			</LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre" />
+
+            </LinearLayout>
 
 			<LinearLayout
 				android:orientation="horizontal"
@@ -168,7 +174,7 @@
 					android:orientation="vertical"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_marginRight="51dp">
+					android:layout_marginRight="5dp">
 
 					<EditText
 						android:layout_width="135dp"
@@ -194,6 +200,37 @@
 						android:id="@+id/RefLN3"/>
 
 				</LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/RefN1"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/RefN2"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/RefN3"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                </LinearLayout>
 
 				<LinearLayout
 					android:orientation="vertical"
@@ -232,25 +269,31 @@
 				android:layout_marginTop="51dp"
 				android:textSize="20sp"/>
 
-			<LinearLayout
-				android:orientation="horizontal"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal"
-				android:layout_marginTop="30dp">
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
 
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Celular"
-					android:layout_marginRight="145dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:text="Celular" />
 
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Nombre"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="55dp"
+                    android:text="Profesion" />
 
-			</LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre" />
+
+            </LinearLayout>
 
 			<LinearLayout
 				android:orientation="horizontal"
@@ -263,7 +306,7 @@
 					android:orientation="vertical"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_marginRight="51dp">
+					android:layout_marginRight="5dp">
 
 					<EditText
 						android:layout_width="135dp"
@@ -289,7 +332,36 @@
 						android:inputType="number"/>
 
 				</LinearLayout>
+                <LinearLayout
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
 
+                    <EditText
+                        android:id="@+id/ReN1"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/ReN2"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/ReN3"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                </LinearLayout>
 				<LinearLayout
 					android:orientation="vertical"
 					android:layout_width="wrap_content"

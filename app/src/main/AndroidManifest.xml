@@ -9,11 +9,14 @@
         android:icon="@mipmap/ic_launcher"
         android:resizeableActivity="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".eliminar"></activity>
+        <activity android:name=".infodeengre"
+            android:label="Usuarios Registrados"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".eliminar" />
         <activity
             android:name=".ofeaplica"
             android:label="Ofertas Aplicadas"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".registrarofeta"
             android:label="Registrar Oferta"
@@ -26,9 +29,10 @@
             android:name=".empresa"
             android:label="Menu"
             android:theme="@style/AppTheme" />
-        <activity android:name=".ofertas"
+        <activity
+            android:name=".ofertas"
             android:label="Editar Oferta"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ofertas_aplicadas"
             android:label="Ofertas Registradas"
