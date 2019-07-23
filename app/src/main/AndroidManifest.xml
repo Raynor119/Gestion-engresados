@@ -7,11 +7,26 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         android:resizeableActivity="true"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".infodeengre"
+        <activity android:name=".notificaciones"></activity>
+        <activity android:name=".eliminaofaplica" />
+        <activity android:name=".usuofeapli" />
+        <activity android:name=".aplicar" />
+        <activity android:name=".buscaoferemple" />
+        <activity android:name=".BolsadeEmpleo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".infodeengre"
             android:label="Usuarios Registrados"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity android:name=".eliminar" />
         <activity
             android:name=".ofeaplica"
@@ -40,13 +55,7 @@
         <activity
             android:name=".MainActivity"
             android:label="Iniciar Sesión"
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity android:name=".cargar" />
         <activity
             android:name=".registrar"
@@ -72,6 +81,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".menuhahe"
+            android:label="Hoja de Vida"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menuhahe1"
             android:label="Hoja de Vida"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

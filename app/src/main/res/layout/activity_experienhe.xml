@@ -140,283 +140,295 @@
 				android:layout_marginTop="51dp"
 				android:textSize="20sp"/>
 
-            <LinearLayout
-                android:layout_width="285dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="70dp"
-                    android:text="Celular" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="55dp"
-                    android:text="Profesion" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center_horizontal">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp">
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:layout_height="wrap_content"
-
-                        android:editable="false"
-                        android:id="@+id/RefLN1"/>
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-
-                        android:editable="false"
-                        android:id="@+id/RefLN2"/>
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-
-                        android:editable="false"
-                        android:id="@+id/RefLN3"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="102dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/RefN1"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:editable="false"
-                        />
-
-                    <EditText
-                        android:id="@+id/RefN2"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:ems="10"
-                        android:editable="false"
-                        />
-
-                    <EditText
-                        android:id="@+id/RefN3"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:ems="10"
-                        android:editable="false"
-                       />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:editable="false"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/NRe1"/>
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:editable="false"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/NRe2"/>
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:editable="false"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/NRe3"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Referencias Familiares"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="51dp"
-                android:textSize="20sp"/>
-
-            <LinearLayout
-                android:layout_width="285dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="70dp"
-                    android:text="Celular" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="55dp"
-                    android:text="Profesion" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center_horizontal">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp">
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/CeRF1"
-                        android:editable="false"/>
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/CeRF2"
-                        android:editable="false"/>
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/CeRF3"
-                        android:editable="false"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="102dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/ReN1"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:editable="false" />
-
-                    <EditText
-                        android:id="@+id/ReN2"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:ems="10"
-                        android:editable="false" />
-
-                    <EditText
-                        android:id="@+id/ReN3"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:ems="10"
-                        android:editable="false" />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:editable="false"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/NRFn1"/>
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:editable="false"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/NRFn2"/>
-
-                    <EditText
-                        android:layout_width="135dp"
-                        android:ems="10"
-                        android:editable="false"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/NRFn3"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-			<Button
-				android:layout_width="160dp"
-				android:layout_height="55dp"
-				android:text="Salir"
-				android:background="@drawable/bbutton"
-				android:textColor="#FFFFFF"
+			<LinearLayout
+				android:layout_width="246dp"
+				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal"
-				android:layout_marginTop="45dp"
-				
-				android:id="@+id/activityexperienButton1"/>
+				android:layout_marginTop="30dp"
+				android:orientation="horizontal">
 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="48dp"
+					android:text="Celular" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="43dp"
+					android:text="Profesion" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Nombre" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				android:layout_gravity="center_horizontal">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="5dp">
+
+					<EditText
+						android:id="@+id/RefLN1"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:editable="false" />
+
+					<EditText
+						android:id="@+id/RefLN2"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false" />
+
+					<EditText
+						android:id="@+id/RefLN3"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="88dp"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="5dp"
+					android:orientation="vertical">
+
+					<EditText
+						android:id="@+id/RefN1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:editable="false" />
+
+					<EditText
+						android:id="@+id/RefN2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false" />
+
+					<EditText
+						android:id="@+id/RefN3"
+						android:layout_width="102dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<EditText
+						android:id="@+id/NRe1"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:editable="false"/>
+
+					<EditText
+						android:id="@+id/NRe2"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false"/>
+
+					<EditText
+						android:id="@+id/NRe3"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Referencias Familiares"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="51dp"
+				android:textSize="20sp"/>
+
+			<LinearLayout
+				android:layout_width="246dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="30dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="48dp"
+					android:text="Celular" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="38dp"
+					android:text="Profesion" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Nombre" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				android:layout_gravity="center_horizontal">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="5dp">
+
+					<EditText
+						android:id="@+id/CeRF1"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:editable="false" />
+
+					<EditText
+						android:id="@+id/CeRF2"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false" />
+
+					<EditText
+						android:id="@+id/CeRF3"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="88dp"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="5dp"
+					android:orientation="vertical">
+
+					<EditText
+						android:id="@+id/ReN1"
+						android:layout_width="102dp"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:editable="false" />
+
+					<EditText
+						android:id="@+id/ReN2"
+						android:layout_width="102dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false" />
+
+					<EditText
+						android:id="@+id/ReN3"
+						android:layout_width="102dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false" />
+
+				</LinearLayout>
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<EditText
+						android:id="@+id/NRFn1"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:editable="false"/>
+
+					<EditText
+						android:id="@+id/NRFn2"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false"/>
+
+					<EditText
+						android:id="@+id/NRFn3"
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:editable="false"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal"
+	android:layout_marginTop="45dp"
+	android:gravity="center"
+	android:orientation="horizontal">
+
+	<Button
+		android:id="@+id/activityexperienButton1"
+		android:layout_width="112dp"
+		android:layout_height="match_parent"
+		android:layout_marginRight="40dp"
+		android:background="@drawable/bbutton"
+
+
+		android:text="Descartar"
+		android:textColor="#FFFFFF" />
+	<Button
+		android:layout_width="112dp"
+		android:layout_height="wrap_content"
+		android:text="Aceptar"
+		android:background="@drawable/bbutton"
+		android:textColor="#FFFFFF"
+
+
+
+		android:id="@+id/activitye"/>
+</LinearLayout>
 			<LinearLayout
 				android:orientation="vertical"
 				android:layout_width="wrap_content"

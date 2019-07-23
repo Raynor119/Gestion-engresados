@@ -26,9 +26,9 @@ import java.util.List;
 import java.util.Map;
 
 public class ofertas extends AppCompatActivity {
-String titulo,descrip,link;
+String titulo,descrip,link,rango;
     EditText Titulo,Descripcion;
-   EditText Link;
+   EditText Link,Rango;
     private List<tbofertasApli> ofert=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +38,15 @@ String titulo,descrip,link;
         titulo=extra.getString("Titulo");
         descrip=extra.getString("descrip");
         link=extra.getString("link");
+        rango=extra.getString("rango");
         Link=(EditText) findViewById(R.id.editText);
         Titulo=(EditText)findViewById(R.id.editText2);
         Descripcion=(EditText)findViewById(R.id.editText3);
+        Rango=(EditText)findViewById(R.id.editText4);
         Titulo.setText(titulo);
         Descripcion.setText(descrip);
         Link.setText(link);
+        Rango.setText(rango);
 
     }
     public void edit(View v){
@@ -51,6 +54,7 @@ String titulo,descrip,link;
        final String ipt=c.ip();
         final String titu = String.valueOf(Titulo.getText().toString());
         final String des = String.valueOf(Descripcion.getText().toString());
+        final String rang= String.valueOf(Rango.getText().toString());
         if (titu.equals("")||des.equals("")) {
             Toast.makeText(getApplicationContext(), "Llene Todos los Campos",Toast.LENGTH_LONG).show();
         }else{
@@ -151,6 +155,7 @@ String titulo,descrip,link;
                             parametros.put("titulo", titu);
                             parametros.put("descrip", des);
                             parametros.put("link", link);
+                            parametros.put("rango", rang);
 
 
                             return parametros;
@@ -209,7 +214,7 @@ String titulo,descrip,link;
                             parametros.put("titulo", titu);
                             parametros.put("descrip", des);
                             parametros.put("link", link);
-
+                            parametros.put("rango", rang);
 
                             return parametros;
                         }

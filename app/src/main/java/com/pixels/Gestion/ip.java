@@ -5,6 +5,6 @@ public class ip
 	
 	public static String ip (){
 		
-		return "192.168.0.161";
+		return "192.168.0.12";
 	}
 }

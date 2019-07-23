@@ -53,7 +53,7 @@ public class ofertas_aplicadas extends AppCompatActivity {
                     try {
                         //Toast.makeText(getApplicationContext(), "entro3",Toast.LENGTH_LONG).show();
                         jo = response.getJSONObject(i);
-                        ofert.add(new tbofertas(jo.getString("titulo"), jo.getString("descrip"), jo.getString("link")));
+                        ofert.add(new tbofertas(jo.getString("titulo"), jo.getString("descrip"), jo.getString("link"),jo.getString("Rango")));
 
                     } catch (JSONException e) {
                         Toast.makeText(getApplicationContext(), "puta", Toast.LENGTH_LONG).show();
@@ -65,7 +65,7 @@ public class ofertas_aplicadas extends AppCompatActivity {
 
 
                 for(int i=0;i<ofert.size();i++){
-                    listaC.put(ofert.get(i).getTitulo(), new tbofertas(ofert.get(i).getTitulo(),ofert.get(i).getDescrip(),ofert.get(i).getLink()));
+                    listaC.put(ofert.get(i).getTitulo(), new tbofertas(ofert.get(i).getTitulo(),ofert.get(i).getDescrip(),ofert.get(i).getLink(),ofert.get(i).getRango()));
                 }
                 listaContactos = listaC;
                 expandableListNombres = new ArrayList<>(listaContactos.keySet());

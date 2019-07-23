@@ -23,11 +23,11 @@ import java.util.Map;
 
 public class experienceh extends Fragment
 {
-	static 	EditText cellrb2,cellrb3,nomrb2,nomrb3,celrf2,celrf3,nomrf2,nomrf3,cur2,cur3;
+	static 	EditText cellrb2,cellrb3,nomrb2,nomrb3,celrf2,celrf3,nomrf2,nomrf3,cur2,cur3,profl2,profl3,proff2,proff3;
 	View vista;
 	Button bt;
 	Intent i;
-	static EditText primarios,secundarios,superiores,cursos,celurb,nombrerb,celurf,nombrerf;
+	static EditText primarios,secundarios,superiores,cursos,celurb,nombrerb,celurf,nombrerf,profesol,profesof;
 	public experienceh() {
         // Required empty public constructor
     }
@@ -52,6 +52,8 @@ public class experienceh extends Fragment
 		nombrerb=(EditText)vista.findViewById(R.id.NRe1);
 		celurf=(EditText)vista.findViewById(R.id.CeRF1);
 		nombrerf=(EditText)vista.findViewById(R.id.NRFn1);
+		profesol=(EditText)vista.findViewById(R.id.RefN1);
+		profesof=(EditText)vista.findViewById(R.id.ReN1);
 
 		cur2=(EditText)vista.findViewById(R.id.cuF1ros2);
 		cur3=(EditText)vista.findViewById(R.id.cuF1ros3);
@@ -63,6 +65,10 @@ public class experienceh extends Fragment
 		celrf3=(EditText)vista.findViewById(R.id.CeRF3);
 		nomrf2=(EditText)vista.findViewById(R.id.NRFn2);
 		nomrf3=(EditText)vista.findViewById(R.id.NRFn3);
+		profl2=(EditText)vista.findViewById(R.id.RefN2);
+		profl3=(EditText)vista.findViewById(R.id.RefN3);
+		proff2=(EditText)vista.findViewById(R.id.ReN2);
+		proff3=(EditText)vista.findViewById(R.id.ReN3);
 		bt.setOnClickListener(new View.OnClickListener(){
 			@Override
 			public void onClick(View view){
@@ -75,10 +81,12 @@ public class experienceh extends Fragment
 			final String nomrb=String.valueOf(nombrerb.getText().toString());
 			final String cerf=String.valueOf(celurf.getText().toString());
 			final String norf=String.valueOf(nombrerf.getText().toString());
+				final String profl=String.valueOf(profesol.getText().toString());
+				final String proff=String.valueOf(profesof.getText().toString());
 			
 			String dc="1";
-			if(pri.equals("")||se.equals("")||sup.equals("")||cur.equals("")||cerb.equals("")||nomrb.equals("")||cerf.equals("")||norf.equals("")){
-				dc="1";
+			if(pri.equals("")||se.equals("")||sup.equals("")||cur.equals("")||cerb.equals("")||nomrb.equals("")||cerf.equals("")||norf.equals("")||profl.equals("")||proff.equals("")){
+					dc="1";
 			}else{
 				dc="";
 			}
@@ -113,7 +121,8 @@ public class experienceh extends Fragment
 				final String nomrbF=nomrb+"/"+nomrb2.getText().toString()+"/"+nomrb3.getText().toString();
 				final String cerFF=cerf+"/"+celrf2.getText().toString()+"/"+celrf3.getText().toString();
 				final String nomrFF=norf+"/"+nomrf2.getText().toString()+"/"+nomrf3.getText().toString();
-				
+				final String profL=profl+"/"+profl2.getText().toString()+"/"+profl3.getText().toString();
+				final String proFF=proff+"/"+proff2.getText().toString()+"/"+proff3.getText().toString();
 				//bd.agreE(useer,pri,se,sup,curf,cerbF,nomrbF,cerFF,nomrFF);
 					//baseI c=new baseI(getActivity());
 
@@ -292,6 +301,8 @@ public class experienceh extends Fragment
 							parametros.put("nombrerl",nomrbF);
 							parametros.put("celularrf",cerFF);
 							parametros.put("nombrerf",nomrFF);
+							parametros.put("profeso",profL);
+							parametros.put("profesof",proFF);
 							return parametros;
 						}
 					};

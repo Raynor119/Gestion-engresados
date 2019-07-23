@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class registrarofeta extends AppCompatActivity {
 
-    EditText Titulo,Descripcion,Link;
+    EditText Titulo,Descripcion,Link,rango;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +27,7 @@ public class registrarofeta extends AppCompatActivity {
         Link=(EditText)findViewById(R.id.editText);
         Titulo=(EditText)findViewById(R.id.editText2);
         Descripcion=(EditText)findViewById(R.id.editText3);
-
+        rango=(EditText)findViewById(R.id.editText4);
     }
     public void guar(View v){
         ip c= new ip();
@@ -35,6 +35,7 @@ public class registrarofeta extends AppCompatActivity {
        final String titu = String.valueOf(Titulo.getText().toString());
         final String des = String.valueOf(Descripcion.getText().toString());
        final String lin = String.valueOf(Link.getText().toString());
+       final String rang= String.valueOf(rango.getText().toString());
         if(titu.equals("")||des.equals("")||lin.equals("")) {
             Toast.makeText(getApplicationContext(), "Llene Todos los Campos",Toast.LENGTH_LONG).show();
         }else{
@@ -68,7 +69,7 @@ public class registrarofeta extends AppCompatActivity {
                     parametros.put("titulo", titu);
                     parametros.put("descrip", des);
                     parametros.put("link", lin);
-
+                    parametros.put("rango", rang);
 
                     return parametros;
                 }

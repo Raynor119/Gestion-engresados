@@ -6,16 +6,16 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="2.7in QVGA" />
-        <device id="pixel" />
         <device id="4.65in 720p (Galaxy Nexus)" />
-        <device id="New Device" />
+        <device id="Nexus 7" />
         <device id="4.7in WXGA" />
+        <device id="pixel" />
+        <device id="2.7in QVGA" />
+        <device id="pixel_c" />
+        <device id="New Device" />
         <device id="3.7in WVGA (Nexus One)" />
         <device id="pixel_2" />
         <device id="2.7in QVGA slider" />
-        <device id="3.7 FWVGA slider" />
-        <device id="4in WVGA (Nexus S)" />
         <target>android-28</target>
       </config>
     </shared>
@@ -25,12 +25,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f9f9cba-9528-40c3-a793-e7eeebbfdc9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/infodeengre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_infodeengre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_ofertas_aplicadas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_registrarofeta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_infodeengre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/BolsadeEmpleo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/aplicar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/basedeinicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/buscaoferemple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/eliminaofaplica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/hojavhe1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhahe1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/notificaciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usuofeapli.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_aplicar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_bolsade_empleo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_buscaoferemple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_eliminaofaplica.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_experienhe1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_hojavhe1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_notificaciones.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_usuofeapli.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_aplicar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_elimu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/menuhhe1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -42,18 +60,40 @@
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/admi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/admi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/cargar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/cargar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/engre.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/engre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experience.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experience.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experienceh.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experienceh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ip.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/orfe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/orfe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/lisref.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/lisref.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhah.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhah.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhahe.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhahe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofeaplica.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofeaplica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas_aplicadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas_aplicadas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrarofeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrarofeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/tbofertas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/tbofertas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usurmm.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usurmm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_empresa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_empresa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_engre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_engre.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_experien.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_experien.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_experienh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_experienh.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_experienhe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_experienhe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ofertas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ofertas.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrarofeta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrarofeta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_ofer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_ofer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_oferapli.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_oferapli.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,49 +127,89 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ip.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/empresa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            <state relative-caret-position="68">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_ofertas_aplicadas.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofeaplica.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/orfe.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="1428">
+              <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_experien.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/engre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6341">
-              <caret line="373" column="49" lean-forward="true" selection-start-line="373" selection-start-column="49" selection-end-line="373" selection-end-column="49" />
+            <state relative-caret-position="68">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="124" column="58" lean-forward="true" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrarofeta.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_infodeengre.xml">
           <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <provider editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="113" column="61" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/eliminaofaplica.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usuofeapli.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_experienhe1.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6579">
+              <caret line="387" column="35" selection-start-line="387" selection-start-column="35" selection-end-line="387" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -150,64 +230,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experienceh.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/lisref.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhah.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/perfil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrar.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/tbofertas.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_opcio.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_ofertas_aplicadas.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrarofeta.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_ofer.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/tbofertasApli.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_ofeaplica.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_oferapli.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_hoj.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_empresa.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/empresa.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas_aplicadas.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofeaplica.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhahe.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/hojavhe.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_ofertas.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_hojavhe.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_eliminar.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/eliminar.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_infodeengre.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/cargar.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_usur.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter1.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter2.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/infodeengre.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/admi.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admi.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/uer.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_registrarofeta.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_infodeengre.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_ofertas_aplicadas.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_empresa.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ip.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/orfe.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_engre.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/basedeinicio.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/BolsadeEmpleo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrarofeta.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/tbofertas.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas_aplicadas.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_ofer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registrarofeta.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_ofertas.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_experienh.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_experien.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/lisref.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experience.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhah.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experienceh.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/admi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/empresa.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_buscaoferemple.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_aplicar.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_aplicar.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/buscaoferemple.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter3.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_usuofeapli.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/engre.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_engre.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_elimu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_eliminaofaplica.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/eliminaofaplica.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_experienhe.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registrarofeta.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter2.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/hojavhe1.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe1.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhahe.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/aplicar.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhahe1.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_experienhe1.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter1.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofeaplica.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usuofeapli.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter4.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="53" />
-    <option name="y" value="-10" />
-    <option name="width" value="1382" />
+    <option name="x" value="-65" />
+    <option name="y" value="48" />
+    <option name="width" value="1040" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -217,11 +297,16 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="Remix_OS" />
+    <property name="device.picker.selection" value="KPSDU18907006493" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/AgendaUnipamplona" />
     <property name="settings.editor.selected.configurable" value="gradle.compiler" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.4.1" />
@@ -406,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563386838081</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="administrador ya terminado">
+      <created>1563584958504</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1563584958506</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -419,22 +511,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.4376658" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.2132653" />
-      <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Build Variants" order="4" side_tool="true" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Designer" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info content_ui="combo" id="Project" order="6" weight="0.14795919" />
       <window_info id="Resources Explorer" order="7" weight="0.32942432" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Find" order="0" weight="0.32839507" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32827735" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32733223" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32569557" />
-      <window_info anchor="bottom" id="Build" order="3" weight="0.15711948" />
+      <window_info anchor="bottom" id="Build" order="3" visible="true" weight="0.15711948" />
       <window_info anchor="bottom" id="Android Profiler" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.30441898" />
       <window_info anchor="bottom" id="Debug" order="6" />
@@ -445,9 +537,9 @@
       <window_info anchor="right" id="Gradle" order="2" weight="0.32980332" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Preview" order="5" weight="0.4216418" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.42142856" />
       <window_info anchor="right" id="Assistant" order="6" weight="0.32857144" />
-      <window_info anchor="right" id="Event Log" order="7" weight="0.32829046" />
+      <window_info anchor="right" id="Event Log" order="7" weight="0.327551" />
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.4376658" />
@@ -497,415 +589,371 @@
     <MESSAGE value="hoja de vida lista" />
     <MESSAGE value="librerias arregladas" />
     <MESSAGE value="empresa ya terminado" />
-    <option name="LAST_COMMIT_MESSAGE" value="empresa ya terminado" />
+    <MESSAGE value="administrador ya terminado" />
+    <option name="LAST_COMMIT_MESSAGE" value="administrador ya terminado" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/BolsadeEmpleo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="49" column="61" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_empresa.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        <state relative-caret-position="850">
+          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ofeaplica.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ofertas_aplicadas.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_hoj.xml">
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_aplicar.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experience.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="365" column="7" selection-start-line="365" selection-start-column="7" selection-end-line="365" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/admina.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="17">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-587">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5245" selection-start-line="5245" selection-end-line="5245" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/widget/TextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="10565" selection-start-line="10565" selection-end-line="10565" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhahe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="520" selection-start-line="520" selection-end-line="520" />
-          <folding>
-            <element signature="e#2959#6169#0" expanded="true" />
-            <element signature="e#6168#6169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ofertas.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/hojavhe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
+        <state relative-caret-position="697">
+          <caret line="57" column="72" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas_aplicadas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="76" selection-start-line="75" selection-end-line="76" />
+        <state relative-caret-position="226">
+          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+          <folding>
+            <element signature="e#1493#3615#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_ofer.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="120" column="36" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-sw600dp/main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+        <state relative-caret-position="321">
+          <caret line="131" column="49" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/eliminar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2958">
-          <caret line="195" column="25" selection-start-line="195" selection-start-column="25" selection-end-line="195" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/registrarofeta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_carga.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_eliminar.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_aplicar.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/empresa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="5" selection-start-line="17" selection-start-column="3" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/cargar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="339" column="43" lean-forward="true" selection-start-line="330" selection-start-column="9" selection-end-line="339" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1784#8693#0" expanded="true" />
-            <element signature="e#8692#8693#0" expanded="true" />
-            <element signature="e#8695#8887#0" expanded="true" />
-            <element signature="e#8886#8887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_opcio.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_usuofeapli.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="266">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter1.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/tbofertasApli.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="162" column="29" selection-start-line="162" selection-start-column="29" selection-end-line="162" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_oferapli.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
+        <state relative-caret-position="17">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofertas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
+        <state relative-caret-position="-1972">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter2.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buscaoferemple.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="27" column="42" selection-start-line="1" selection-end-line="27" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/admi.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_engre.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_infodeengre.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/per.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="255">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_usur.xml">
       <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="15" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
-        </state>
-      </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofeaplica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="85" column="66" selection-start-line="85" selection-start-column="66" selection-end-line="85" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/view/LayoutInflater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="781" selection-start-line="781" selection-end-line="781" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ofertas_aplicadas.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" lean-forward="true" selection-start-line="3" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_infodeengre.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_registrarofeta.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/infodeengre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admi.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_hojavh.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_opcio.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_hojavhe.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_elimu.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="5185">
-          <caret line="305" selection-start-line="305" selection-end-line="305" />
+        <state relative-caret-position="85">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_engre.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/cargar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_oferapli.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_hojav.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_ofer.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_eliminar.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_eliminaofaplica.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="49" selection-start-line="7" selection-start-column="4" selection-end-line="15" selection-end-column="49" />
+        <state relative-caret-position="306">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/uer.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/eliminar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_ofertas_aplicadas.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/orfe.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="-485">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_experienhe.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="1119">
+          <caret line="421" column="36" selection-start-line="421" selection-start-column="36" selection-end-line="421" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_experienh.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="356" column="49" selection-start-line="356" selection-start-column="49" selection-end-line="356" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_experien.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6341">
-          <caret line="373" column="49" lean-forward="true" selection-start-line="373" selection-start-column="49" selection-end-line="373" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrarofeta.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_notificaciones.xml">
       <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/notificaciones.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/admi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/infodeengre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/hojavhe1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="37" column="63" lean-forward="true" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhahe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/buscaoferemple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/aplicar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="886">
+          <caret line="180" column="46" selection-start-line="180" selection-start-column="46" selection-end-line="180" selection-end-column="46" />
+          <folding>
+            <element signature="e#4202#5758#0" expanded="true" />
+            <element signature="e#5757#5758#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="87" column="40" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/menuhahe1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="230" selection-start-line="230" selection-end-line="230" />
+          <folding>
+            <element signature="e#10732#19300#0" expanded="true" />
+            <element signature="e#19299#19300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experienceh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5899">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/empresa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/ofeaplica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/engre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/eliminaofaplica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/usuofeapli.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_experienhe1.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6579">
+          <caret line="387" column="35" selection-start-line="387" selection-start-column="35" selection-end-line="387" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/CustomExpandableListAdapter4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="113" column="61" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pixels/Gestion/experiencehe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="124" column="58" lean-forward="true" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_infodeengre.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

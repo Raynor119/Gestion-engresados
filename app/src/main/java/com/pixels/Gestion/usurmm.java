@@ -10,11 +10,13 @@ public class usurmm
 
 	}
 	public usurmm(String usuario,String contraseña,String nombre,String tipo){
+
 		this.Usuario=usuario;
 		this.Contraseña=contraseña;
 		this.Nombre=nombre;
 		this.Tipo=tipo;
 	}
+
 	public String getUsuario(){
 		return Usuario;
 	}

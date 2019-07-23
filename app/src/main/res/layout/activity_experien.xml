@@ -137,31 +137,31 @@
 				android:layout_marginTop="51dp"
 				android:textSize="20sp"/>
 
-            <LinearLayout
-                android:layout_width="285dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+			<LinearLayout
+				android:layout_width="246dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="30dp"
+				android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="70dp"
-                    android:text="Celular" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="48dp"
+					android:text="Celular" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="55dp"
-                    android:text="Profesion" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="43dp"
+					android:text="Profesion" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Nombre" />
 
-            </LinearLayout>
+			</LinearLayout>
 
 			<LinearLayout
 				android:orientation="horizontal"
@@ -177,60 +177,60 @@
 					android:layout_marginRight="5dp">
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:id="@+id/RefLN1"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
-						android:inputType="number"
-						android:id="@+id/RefLN1"/>
+						android:ems="10"
+						android:inputType="number" />
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:id="@+id/RefLN2"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="10dp"
-						android:inputType="number"
-						android:id="@+id/RefLN2"/>
+						android:ems="10"
+						android:inputType="number" />
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:id="@+id/RefLN3"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="10dp"
-						android:inputType="number"
-						android:id="@+id/RefLN3"/>
+						android:ems="10"
+						android:inputType="number" />
 
 				</LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="102dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:orientation="vertical">
+				<LinearLayout
+					android:layout_width="88dp"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="5dp"
+					android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/RefN1"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="number" />
+					<EditText
+						android:id="@+id/RefN1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:inputType="textAutoComplete" />
 
-                    <EditText
-                        android:id="@+id/RefN2"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:ems="10"
-                        android:inputType="number" />
+					<EditText
+						android:id="@+id/RefN2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:inputType="textAutoComplete" />
 
-                    <EditText
-                        android:id="@+id/RefN3"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:ems="10"
-                        android:inputType="number" />
+					<EditText
+						android:id="@+id/RefN3"
+						android:layout_width="102dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:inputType="textAutoComplete" />
 
-                </LinearLayout>
+				</LinearLayout>
 
 				<LinearLayout
 					android:orientation="vertical"
@@ -238,24 +238,27 @@
 					android:layout_height="wrap_content">
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:id="@+id/NRe1"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
-						android:id="@+id/NRe1"/>
+						android:ems="10"
+						android:inputType="textAutoComplete"/>
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:id="@+id/NRe2"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="10dp"
-						android:id="@+id/NRe2"/>
+						android:ems="10"
+						android:inputType="textAutoComplete"/>
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:id="@+id/NRe3"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="10dp"
-						android:id="@+id/NRe3"/>
+						android:ems="10"
+						android:inputType="textAutoComplete"/>
 
 				</LinearLayout>
 
@@ -269,31 +272,31 @@
 				android:layout_marginTop="51dp"
 				android:textSize="20sp"/>
 
-            <LinearLayout
-                android:layout_width="285dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+			<LinearLayout
+				android:layout_width="246dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="30dp"
+				android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="70dp"
-                    android:text="Celular" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="48dp"
+					android:text="Celular" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="55dp"
-                    android:text="Profesion" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="38dp"
+					android:text="Profesion" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Nombre" />
 
-            </LinearLayout>
+			</LinearLayout>
 
 			<LinearLayout
 				android:orientation="horizontal"
@@ -309,83 +312,87 @@
 					android:layout_marginRight="5dp">
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
 						android:id="@+id/CeRF1"
-						android:inputType="number"/>
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:inputType="number" />
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="10dp"
 						android:id="@+id/CeRF2"
-						android:inputType="number"/>
-
-					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:inputType="number" />
+
+					<EditText
 						android:id="@+id/CeRF3"
-						android:inputType="number"/>
+						android:layout_width="103dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:inputType="number" />
 
 				</LinearLayout>
-                <LinearLayout
-                    android:layout_width="102dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/ReN1"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="number" />
+				<LinearLayout
+					android:layout_width="88dp"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="5dp"
+					android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/ReN2"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:ems="10"
-                        android:inputType="number" />
+					<EditText
+						android:id="@+id/ReN1"
+						android:layout_width="102dp"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:inputType="textAutoComplete" />
 
-                    <EditText
-                        android:id="@+id/ReN3"
-                        android:layout_width="102dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:ems="10"
-                        android:inputType="number" />
+					<EditText
+						android:id="@+id/ReN2"
+						android:layout_width="102dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:inputType="textAutoComplete" />
 
-                </LinearLayout>
+					<EditText
+						android:id="@+id/ReN3"
+						android:layout_width="102dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:ems="10"
+						android:inputType="textAutoComplete" />
+
+				</LinearLayout>
 				<LinearLayout
 					android:orientation="vertical"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content">
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:id="@+id/NRFn1"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
-						android:id="@+id/NRFn1"/>
+						android:ems="10"
+						android:inputType="textAutoComplete"/>
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:id="@+id/NRFn2"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="10dp"
-						android:id="@+id/NRFn2"/>
+						android:ems="10"
+						android:inputType="textAutoComplete"/>
 
 					<EditText
-						android:layout_width="135dp"
-						android:ems="10"
+						android:id="@+id/NRFn3"
+						android:layout_width="103dp"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="10dp"
-						android:id="@+id/NRFn3"/>
+						android:ems="10"
+						android:inputType="textAutoComplete"/>
 
 				</LinearLayout>
 

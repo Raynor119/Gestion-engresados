@@ -1,16 +1,25 @@
 package com.pixels.Gestion;
 
 public class tbofertas {
-    private String Titulo,Descrip,link;
+    private String Titulo,Descrip,link,Rango;
 
     public tbofertas() {
-        
+
     }
 
-    public tbofertas(String Titulo, String Descrip, String link) {
+    public tbofertas(String Titulo, String Descrip, String link, String Rango) {
         this.Titulo = Titulo;
         this.Descrip = Descrip;
         this.link = link;
+        this.Rango = Rango;
+    }
+
+    public String getRango() {
+        return Rango;
+    }
+
+    public void setRango(String Rango) {
+        this.Rango = Rango;
     }
 
     public String getTitulo() {
@@ -36,6 +45,5 @@ public class tbofertas {
     public void setLink(String link) {
         this.link = link;
     }
-        
-    
+
 }

@@ -22,7 +22,18 @@
 		android:layout_gravity="center_vertical|center_horizontal"
 		android:layout_marginTop="70dp"
 		android:background="@drawable/botoh"
+		android:onClick="aplicaof"
 		android:text="Buscar Ofertas de Empleo"
+		android:textColor="#FFFFFF" />
+	<Button
+		android:id="@+id/buttonn"
+		android:layout_width="173dp"
+		android:layout_height="64dp"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:layout_marginTop="70dp"
+		android:background="@drawable/botoh"
+		android:onClick="aplicaofya"
+		android:text="Ver Ofertas Aplicadas"
 		android:textColor="#FFFFFF" />
 
 	<Button
@@ -32,6 +43,7 @@
 		android:layout_gravity="center_vertical|center_horizontal"
 		android:layout_marginTop="80dp"
 		android:background="@drawable/botoh"
+		android:onClick="cerrarcesion"
 		android:text="Salir"
 		android:textColor="#FFFFFF" />
 

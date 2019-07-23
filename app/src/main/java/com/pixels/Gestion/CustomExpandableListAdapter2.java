@@ -93,7 +93,7 @@ public class CustomExpandableListAdapter2 extends BaseExpandableListAdapter {
 
             public void onClick(View v) {
 
-                Intent i=new Intent(contet,menuhahe.class);
+                Intent i=new Intent(contet,menuhahe1.class);
                 i.putExtra("Usuario",contacto.getUsuario());
 
                 contet.startActivity(i);

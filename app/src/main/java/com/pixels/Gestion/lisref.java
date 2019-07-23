@@ -1,49 +1,78 @@
 package com.pixels.Gestion;
 
 public class lisref {
-    String Usuario,Celularrb,Nombrerb,Celularrf,Nombrerf;
+    private String USUARIO, CELULARRL, NOMBRERL, CELULARRF, NOMBRERF, PROFRL, PROFRF;
 
-   public lisref(){
-
-    }
-    public lisref(String usuario,String celularrb,String nombrerb,String celularrf,String nombrerf){
-        this.Usuario=usuario;
-        this.Celularrb=celularrb;
-        this.Nombrerb=nombrerb;
-        this.Celularrf=celularrf;
-        this.Nombrerf=nombrerf;
-
-    }
-    public String getUsuario(){
-        return Usuario;
-    }
-    public void setUsuario(String usuario){
-        Usuario=usuario;
+    public lisref() {
     }
 
-    public String getCelularrb(){
-        return Celularrb;
+    public lisref(String USUARIO, String CELULARRL, String NOMBRERL, String CELULARRF, String NOMBRERF, String PROFRL, String PROFRF) {
+        this.USUARIO = USUARIO;
+        this.CELULARRL = CELULARRL;
+        this.NOMBRERL = NOMBRERL;
+        this.CELULARRF = CELULARRF;
+        this.NOMBRERF = NOMBRERF;
+        this.PROFRL = PROFRL;
+        this.PROFRF = PROFRF;
     }
-    public void setCelularrb(String celularrrb){
-        Celularrb=celularrrb;
+
+    public String getPROFRL() {
+        return PROFRL;
     }
-    public String getNombrerb(){
-        return Nombrerb;
+
+    public void setPROFRL(String PROFRL) {
+        this.PROFRL = PROFRL;
     }
-    public void setNombrerb(String nombrerb){
-        Nombrerb=nombrerb;
+
+    public String getPROFRF() {
+        return PROFRF;
     }
-    public String getCelularrf(){
-        return Celularrf;
+
+    public void setPROFRF(String PROFRF) {
+        this.PROFRF = PROFRF;
     }
-    public void setCelularrf(String celularrf){
-        Celularrf=celularrf;
+
+
+
+    public String getUSUARIO() {
+        return USUARIO;
     }
-    public String getNombrerf(){
-        return Nombrerf;
+
+    public void setUSUARIO(String USUARIO) {
+        this.USUARIO = USUARIO;
     }
-    public void setNombrerf(String nombrerf){
-        Nombrerf=nombrerf;
+
+    public String getCELULARRL() {
+        return CELULARRL;
     }
+
+    public void setCELULARRL(String CELULARRL) {
+        this.CELULARRL = CELULARRL;
+    }
+
+    public String getNOMBRERL() {
+        return NOMBRERL;
+    }
+
+    public void setNOMBRERL(String NOMBRERL) {
+        this.NOMBRERL = NOMBRERL;
+    }
+
+    public String getCELULARRF() {
+        return CELULARRF;
+    }
+
+    public void setCELULARRF(String CELULARRF) {
+        this.CELULARRF = CELULARRF;
+    }
+
+    public String getNOMBRERF() {
+        return NOMBRERF;
+    }
+
+    public void setNOMBRERF(String NOMBRERF) {
+        this.NOMBRERF = NOMBRERF;
+    }
+
 
 }

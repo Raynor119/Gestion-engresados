@@ -116,6 +116,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
              i.putExtra("Titulo",contacto.getTitulo());
                i.putExtra("descrip",contacto.getDescrip());
                i.putExtra("link",contacto.getLink());
+                i.putExtra("rango",contacto.getRango());
 
                 contet.startActivity(i);
                 contet.finish();
@@ -188,14 +189,14 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         TextView txtdescribcion = convertView.findViewById(R.id.text);
         TextView txtlink = convertView.findViewById(R.id.textlink);
-
+        TextView txtrango = convertView.findViewById(R.id.textrango);
 
         txttitulo.setText(nombre);
 
         txtdescribcion .setText(contacto.getDescrip());
 
         txtlink.setText(contacto.getLink());
-
+        txtrango.setText(contacto.getRango());
 
 
         return convertView;

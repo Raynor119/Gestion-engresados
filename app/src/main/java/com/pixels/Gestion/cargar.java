@@ -37,6 +37,7 @@ int p;
 	String line=null;
 	String result=null;
 	String[] data;
+	String deci;
 	@Override
 	protected void onCreate(Bundle SavedInstacestate){
 		super.onCreate(SavedInstacestate);
@@ -44,6 +45,7 @@ int p;
 		Bundle extra = getIntent().getExtras();
 		user=extra.getString("Usuario");
 		cont=extra.getString("Contraseña");
+		deci=extra.getString("deci");
 		
 		//BasedeDatosU bas=new BasedeDatosU(getApplicationContext());
 		usurmm busca=new usurmm();
@@ -128,11 +130,20 @@ int p;
 
 
 								if(dat.equals("1")|| dat.equals("2")){
+									if(deci.equals("1")){
+										basedeinicio n=new basedeinicio(getApplicationContext());
+										n.inic("1",uss,cont,"","");
+									}
+
 									Intent intent=new Intent(cargar.this,engre.class);
 									intent.putExtra("Usuario",uss);
 									startActivity(intent);
 									finish();
 								}else{
+									if(deci.equals("1")){
+										basedeinicio n=new basedeinicio(getApplicationContext());
+										n.inic("1",uss,cont,"","");
+									}
 									AlertDialog.Builder alert= new AlertDialog.Builder(cargar.this);
 
 									alert.setMessage("Desea Registrar la Hoja de Vida")
@@ -276,7 +287,10 @@ int p;
 
 								    if(promedioLista.get(p).getTipo().equals("1")){
 
-
+										if(deci.equals("1")){
+											basedeinicio n=new basedeinicio(getApplicationContext());
+											n.inic("1",uss,cont,"","");
+										}
 								        Intent intent=new Intent(cargar.this,admi.class);
                                         intent.putExtra("Usuario",uss);
                                         startActivity(intent);
@@ -284,7 +298,10 @@ int p;
 
                                     }
                                     if(promedioLista.get(p).getTipo().equals("2")){
-
+										if(deci.equals("1")){
+											basedeinicio n=new basedeinicio(getApplicationContext());
+											n.inic("1",uss,cont,"","");
+										}
                                         Intent intent=new Intent(cargar.this,empresa.class);
                                         intent.putExtra("Usuario",uss);
                                         startActivity(intent);

@@ -129,7 +129,7 @@
 					android:layout_marginTop="22dp"
 					android:background="@drawable/bbutton"
 					android:onClick="onclick"
-					android:text="Iniciar Seccion"
+					android:text="Iniciar Sesión"
 					android:textColor="#FFFFFF"/>
 
 			</LinearLayout>

@@ -270,7 +270,7 @@ static 	public String user;
                                 try {
                                     //Toast.makeText(getApplicationContext(), "entro3",Toast.LENGTH_LONG).show();
                                     jo = response.getJSONObject(i);
-                                    expe.add(new lisref(jo.getString("USUARIO"), jo.getString("CELULARRL"), jo.getString("NOMBRERL"), jo.getString("CELULARRF"), jo.getString("NOMBRERF")));
+                                    expe.add(new lisref(jo.getString("USUARIO"), jo.getString("CELULARRL"), jo.getString("NOMBRERL"), jo.getString("CELULARRF"), jo.getString("NOMBRERF"), jo.getString("PROFRL"), jo.getString("PROFRF")));
                                     // promedioLista.get(i).getUsuario();
                                     //Toast.makeText(getApplicationContext(), promedioLista.get(i).getUsuario()+" :t",Toast.LENGTH_LONG).show();
                                     //String v=jo.getString("USUARIO");
@@ -289,7 +289,7 @@ static 	public String user;
                             for(i=0;i<expe.size();i++){
 
 
-                                String usurrr=expe.get(i).getUsuario();
+                                String usurrr=expe.get(i).getUSUARIO();
                                 if(usurrr.equals(user)){
                                     confu=1;
                                     p=i;
@@ -298,7 +298,7 @@ static 	public String user;
                             }
 
 
-                            String otr=expe.get(p).getCelularrb();
+                            String otr=expe.get(p).getCELULARRL();
                             int r=0;
                             String palabra="";
                             for(int v=0;v<otr.length();v++){
@@ -321,7 +321,7 @@ static 	public String user;
                                     experienceh.cellrb3.setText(palabra);
                                 }
                             }
-                             otr=expe.get(p).getNombrerb();
+                             otr=expe.get(p).getNOMBRERL();
                              r=0;
                              palabra="";
                             for(int v=0;v<otr.length();v++){
@@ -344,7 +344,7 @@ static 	public String user;
                                     experienceh.nomrb3.setText(palabra);
                                 }
                             }
-                            otr=expe.get(p).getCelularrf();
+                            otr=expe.get(p).getCELULARRF();
                             r=0;
                             palabra="";
                             for(int v=0;v<otr.length();v++){
@@ -367,7 +367,7 @@ static 	public String user;
                                     experienceh.celrf3.setText(palabra);
                                 }
                             }
-                            otr=expe.get(p).getNombrerf();
+                            otr=expe.get(p).getNOMBRERF();
                             r=0;
                             palabra="";
                             for(int v=0;v<otr.length();v++){
@@ -388,6 +388,52 @@ static 	public String user;
                                 }
                                 if(r==2){
                                     experienceh.nomrf3.setText(palabra);
+                                }
+                            }
+                            otr=expe.get(p).getPROFRL();
+                            r=0;
+                            palabra="";
+                            for(int v=0;v<otr.length();v++){
+                                char letra=otr.charAt(v);
+                                String nos=""+letra;
+                                if(nos.equals("/")){
+                                    if (r == 0) {
+                                        experienceh.profesol.setText(palabra);
+                                    }
+                                    if(r==1){
+                                        experienceh.profl2.setText(palabra);
+                                    }
+                                    r++;
+                                    palabra="";
+                                }else {
+                                    palabra=palabra+letra;
+
+                                }
+                                if(r==2){
+                                    experienceh.profl3.setText(palabra);
+                                }
+                            }
+                            otr=expe.get(p).getPROFRF();
+                            r=0;
+                            palabra="";
+                            for(int v=0;v<otr.length();v++){
+                                char letra=otr.charAt(v);
+                                String nos=""+letra;
+                                if(nos.equals("/")){
+                                    if (r == 0) {
+                                        experienceh.profesof.setText(palabra);
+                                    }
+                                    if(r==1){
+                                        experienceh.proff2.setText(palabra);
+                                    }
+                                    r++;
+                                    palabra="";
+                                }else {
+                                    palabra=palabra+letra;
+
+                                }
+                                if(r==2){
+                                    experienceh.proff3.setText(palabra);
                                 }
                             }
 

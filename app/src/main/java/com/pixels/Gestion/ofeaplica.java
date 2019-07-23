@@ -33,7 +33,7 @@ public class ofeaplica extends AppCompatActivity {
     private int lastExpandedPosition = -1;
 
     private List<tbofertasApli> ofert=new ArrayList<>();
-    private Activity activity;
+  static   public Activity activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

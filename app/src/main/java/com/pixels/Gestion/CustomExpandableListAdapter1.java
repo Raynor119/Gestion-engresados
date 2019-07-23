@@ -95,7 +95,9 @@ public class CustomExpandableListAdapter1 extends BaseExpandableListAdapter {
 
                Intent i=new Intent(contet,menuhahe.class);
                i.putExtra("Usuario",contacto.getUsuario());
+                i.putExtra("oferta",contacto.getOferta());
                contet.startActivity(i);
+               ofeaplica.activity.finish();
             }
 
         });
