@@ -27,7 +27,7 @@ public class experiencehe extends Fragment
 {
 	static 	EditText cellrb2,cellrb3,nomrb2,nomrb3,celrf2,celrf3,nomrf2,nomrf3,cur2,cur3,profl2,profl3,proff2,proff3;
 	View vista;
-	Button bt;
+	Button bt,bt1;
 	Intent i;
 	static EditText primarios,secundarios,superiores,cursos,celurb,nombrerb,celurf,nombrerf,profesol,profesof;
 
@@ -47,6 +47,7 @@ public class experiencehe extends Fragment
         // Inflate the layout for this fragment
 		vista=inflater.inflate(R.layout.activity_experienhe, container, false);
 		bt=(Button) vista.findViewById(R.id.activityexperienButton1);
+		bt1=(Button) vista.findViewById(R.id.activitye);
 		primarios=(EditText)vista.findViewById(R.id.Eprima);
 		secundarios=(EditText)vista.findViewById(R.id.Esecun);
 		superiores=(EditText)vista.findViewById(R.id.Esuperi);
@@ -165,7 +166,13 @@ public class experiencehe extends Fragment
 
 			
 		});
-		
+		bt1.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(getActivity(), "Se a enviado el mensaje al correo ", Toast.LENGTH_SHORT).show();
+				getActivity().finish();
+			}
+		});
         return vista;
 
 		

@@ -7,24 +7,36 @@
 
 	<uses-sdk
 		android:minSdkVersion="21"
-		android:targetSdkVersion="28"/>
+		android:targetSdkVersion="27"/>
 
 	<uses-permission
-		android:name="android.permission.INTERNET">
-
-	</uses-permission>
+		android:name="android.permission.INTERNET"/>
 
 	<application
 		android:allowBackup="true"
 		android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name"
-		android:theme="@style/AppTheme"
-		android:resizeableActivity="true">
+		android:resizeableActivity="true"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
 
 		<activity
-			android:name=".MainActivity"
-			android:label="Iniciar Sesión"
-			android:theme="@style/AppTheme">
+			android:name=".notificaciones"/>
+
+		<activity
+			android:name=".eliminaofaplica"/>
+
+		<activity
+			android:name=".usuofeapli"/>
+
+		<activity
+			android:name=".aplicar"/>
+
+		<activity
+			android:name=".buscaoferemple"/>
+
+		<activity
+			android:name=".BolsadeEmpleo">
 
 			<intent-filter>
 
@@ -37,6 +49,49 @@
 			</intent-filter>
 
 		</activity>
+
+		<activity
+			android:name=".infodeengre"
+			android:label="Usuarios Registrados"
+			android:theme="@style/AppTheme"/>
+
+		<activity
+			android:name=".eliminar"/>
+
+		<activity
+			android:name=".ofeaplica"
+			android:label="Ofertas Aplicadas"
+			android:theme="@style/AppTheme"/>
+
+		<activity
+			android:name=".registrarofeta"
+			android:label="Registrar Oferta"
+			android:theme="@style/AppTheme"/>
+
+		<activity
+			android:name=".admi"
+			android:label="Menu de Administrador"
+			android:theme="@style/AppTheme"/>
+
+		<activity
+			android:name=".empresa"
+			android:label="Menu"
+			android:theme="@style/AppTheme"/>
+
+		<activity
+			android:name=".ofertas"
+			android:label="Editar Oferta"
+			android:theme="@style/AppTheme"/>
+
+		<activity
+			android:name=".ofertas_aplicadas"
+			android:label="Ofertas Registradas"
+			android:theme="@style/AppTheme"/>
+
+		<activity
+			android:name=".MainActivity"
+			android:label="Iniciar Sesión"
+			android:theme="@style/AppTheme"/>
 
 		<activity
 			android:name=".cargar"/>
@@ -62,13 +117,27 @@
 
 		<activity
 			android:name=".engre"
-			android:label="Menu"
 			android:theme="@style/AppTheme"/>
 
 		<activity
 			android:name=".perfil"
 			android:label="Perfil"
 			android:theme="@style/AppTheme"/>
+
+		<activity
+			android:name=".menuhah"
+			android:label="Hoja de Vida"
+			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity
+			android:name=".menuhahe"
+			android:label="Hoja de Vida"
+			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity
+			android:name=".menuhahe1"
+			android:label="Hoja de Vida"
+			android:theme="@style/AppTheme.NoActionBar"/>
 
 	</application>
 
